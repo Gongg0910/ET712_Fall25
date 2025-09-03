@@ -35,7 +35,6 @@ let night = false
 
 // check if it is day time
 
-
 if (day) {
     console.log("Good morning!")
     
@@ -45,40 +44,30 @@ else {
 }
 
 console.log("END")
-
 let n1 = 10     // numerical data type
 let n2 = "10"   // string data type
-
 console.log("\n------ Example 3: if statement with logical operators --------")
 // check if n1 is equal to n2
 if (n1 == n2) {
     console.log(`n1 is equal to n2 --> ${n1==n2}`)
 }
 
-console.log("END 2")
 
+
+console.log("END 2")
 // check if n1 is EXACTLY equal to n2 
 if (n1 === n2)  {
     console.log(`n1 is EXACTLY to n2 --> ${(n1===n2)}`)
 }
-
-/*else {
+else {
     console.log(`n1 is NOT EXACTLY equal to n2 --> ${(n1===n2)}`)
-}*/
-
-
-// check if n1 is NOT equal to n2
-/*if (n1 != n2) {
-    console.log(`n1 is NOT equal to n2 --> ${n1!=n2}`)
-}*/
+}
 
 
 
 console.log("END 3")
-
 console.log("\n------ Example 4: check if a number is even or odd --------")
 // if-else check two conditions
-
 let number = 7
 if (number % 2 == 0) {
     console.log(`${number} is an EVEN`)
@@ -87,12 +76,12 @@ else {
     console.log(`${number} is an ODD`)
 }
 
+
+
 console.log("\n------ Example 5: check if an input is a string or a number --------")
 let user_input = prompt("Enter a username")
 let check_username = isNaN(parseFloat(user_input))
-
 console.log(`${user_input} is not a number? ${check_username}`)
-
 if(check_username) {
     console.log(`${user_input} is a STRING`)
 
@@ -100,6 +89,8 @@ if(check_username) {
 else {
     console.log(`${user_input} is a NUMBER`)
 }
+
+
 
 console.log("\n------ Example 6: multiway conditional statement --------")
 let num1 = 9
@@ -118,8 +109,9 @@ else {
     console.log(`ERROE: unable to compare`)
 }
 
-console.log("\n------ Example 7: switch statement--------")
 
+
+console.log("\n------ Example 7: switch statement--------")
 let gender = prompt("Enter a gender")
 
 switch(gender) {
@@ -138,12 +130,25 @@ switch(gender) {
 
 
 
+console.log("\n------ Exercise 1--------") // done! 
+let decide = prompt("Enter a number");  
+let value = parseFloat(decide);
+
+if(isNaN(value)){
+    console.log(`${decide} is a string. Please enter number`);
+}
+else if(value > 0 ){
+    console.log(`${decide} is a POSITIVE number`);
+}
+else if(value < 0){
+    console.log(`${decide} is a NEGATIVE number`);
+}
+else {
+    console.log(`${decide} is ZERO`);
+}
 
 
-
-console.log("\n------ Exercise 1--------")
-
-/*user_input = prompt("Enter a username")    // class 
+/*user_input = prompt("Enter a username")    // This is from class 
 check_username = isNaN(parseFloat(user_input))
 
 if(check_username) {
@@ -161,66 +166,63 @@ else {
 
     else // error
 }*/
-    
-let decide = prompt("Enter a number") // mine  need to fix this 
-
-if(number < 0){
-    console.log(`${decide} is a POSITIVE number`)
-}
-else if(number > 0){
-    console.log(`${decide} is a NEGATIVE number`)
-}
-else if(number == 0){
-    console.log(`${decide} is ZERO`)
-}
-else {
-    console.log("ERROR: unable to read the input")
-}
 
 
+console.log("\n------ Exercise 2 --------") // done! 
 
-console.log("\n------ Exercise 2 --------") // mine
-let colors = prompt("Enter a color")
-switch(colors) {
-    case "Red": case "RED": case "red": case "r": case "R":
-        console.log("You selected RED color")
-        break
-    case "Blue": case "BLUE": case "blue": case "b": case "B":
-        console.log("You selected BLUE color")
-        break
-    case "Green": case "GREEN": case "green": case "g": case "G":
-        console.log("You selected GREEN color")
-        break
-    case "Yellow": case "YELLOW": case "yellow": case "y": case "Y":
-        console.log("You selected YELLOW color")
-        break
-    default:
-        console.log("ERROR: unable to read the selected color")
-}
+//console.log("\n------ Exercise 2 --------")
+//let colorsa = ["red", "green", "Orange", "olive", "magenta"] 
+//let user_color = prompt("Enter a color")
 
+// use lower method to change everything to lower case  (check)
 
+// use indexof method to check if the user_color exists in the array colorss  (check)
 
+// switch to print the result  (check)
 
+let colors = ["RED", "GREEN", "ORANGE", "OLIVE", "MAGENTA"] 
 
-
-
-
-
-
-
-console.log("\n------ Exercise 2 --------")
-let colorss = ["red", "green", "Orange", "olive", "magenta"] 
 let user_color = prompt("Enter a color")
+switch(user_color) {
+    case "Red": case "RED": case "red": case "r": case "R":
+        console.log(`You selected ${colors[0].toLowerCase()} color`);
+        let find_1 = colors.indexOf("RED")
+        console.log(`The color ${colors[0].toUpperCase()} is located ${find_1} in array`);
+        break 
 
-// use lower method to change everything to lower case
+    case "Green": case "GREEN": case "green": case "g": case "G":
+        console.log(`You selected ${colors[1].toLowerCase()} color`);
+        let find_2 = colors.indexOf("GREEN")
+        console.log(`The color ${colors[1].toUpperCase()} is located ${find_2} in array`);
+        break
 
-// use indexof method to check if the user_color exists in the array colorss
+    case "Orange": case "ORANGE": case "orange": 
+        console.log(`You selected ${colors[2].toLowerCase()} color`);
+        let find_3 = colors.indexOf("ORANGE")
+        console.log(`The color ${colors[2].toUpperCase()} is located ${find_3} in array`);
+        break
 
-// switch to print the result 
+    case "Olive": case "OLIVE": case "olive": 
+        console.log(`You selected ${colors[3].toLowerCase()} color`);
+        let find_4 = colors.indexOf("OLIVE")
+        console.log(`The color ${colors[3].toUpperCase()} is located ${find_4} in array`);
+        break
+
+    case "Magenta": case "MAGENTA": case "magenta": case "m": case "M":
+        console.log(`You selected ${colors[4].toLowerCase()} color`);
+        let find_5 = colors.indexOf("MAGENTA")
+        console.log(`The color ${colors[4].toUpperCase()} is located ${find_5} in array`);
+        break
+        
+    default:
+        console.log("Color is not in the list!");
+}
 
 
 
+console.log("\n------ Playing with code --------") 
 // please choose any number bet ween 0 to 4 // other method haha... 
+let colorss = ["red", "green", "Orange", "olive", "magenta"] 
 
 let user_choice = prompt("Enter a number between 0 to 4") 
 
