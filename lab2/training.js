@@ -43,6 +43,8 @@ else {
     console.log("Good night!")
 }
 
+
+
 console.log("END")
 let n1 = 10     // numerical data type
 let n2 = "10"   // string data type
@@ -52,15 +54,13 @@ if (n1 == n2) {
     console.log(`n1 is equal to n2 --> ${n1==n2}`)
 }
 
-
-
 console.log("END 2")
 // check if n1 is EXACTLY equal to n2 
 if (n1 === n2)  {
-    console.log(`n1 is EXACTLY to n2 --> ${(n1===n2)}`)
+    console.log(`n1 is EXACTLY to n2 --> ${(n1===n2)}`) // let n1 = 10, n2 = "10"   it work different because of quotes
 }
 else {
-    console.log(`n1 is NOT EXACTLY equal to n2 --> ${(n1===n2)}`)
+    console.log(`n1 is NOT EXACTLY equal to n2 --> ${(n1===n2)}`) // let n1 = 10, n2 = 10
 }
 
 
@@ -118,7 +118,7 @@ switch(gender) {
     case "Female": case "FEMALE": case "F": case "f": case "female":
         console.log("Selected gender = FEMALE")
         break
-    case "Male": case "MALE": case "M": case "m": 
+    case "Male": case "MALE": case "M": case "m": case "male":
         console.log("Selecteed gender = MALE")
         break
     case "Other": case "OTHER": case "other": case "o": case "O": 
@@ -215,7 +215,8 @@ switch(user_color) {
         break
         
     default:
-        console.log("Color is not in the list!");
+        console.log("Color is not in the array list!");
+        console.log(`Please choose ${colors}`)
 }
 
 
