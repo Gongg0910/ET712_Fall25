@@ -76,14 +76,12 @@ for(let counter = 1; counter <= 3; counter++){
 }
 
 
-
 console.log(`\n ----- example 7: while loop as a counter  -----`)
 let y = 0;
 while(y < 5){
     console.log(y)
     y++
 }
-
 
 
 console.log(`\n ----- example 8: validate an input  -----`)
@@ -98,16 +96,56 @@ console.log(`The collecter number is ${number}`)
 
 
 
-console.log(`\n ----- example 8: simulate a bank transaction  -----`)
 
-let balance = 1000;
+console.log(`\n ----- example 9: simulate a bank transaction  -----`)
+
+// let balance = 1000;    /********  THIS IS FROM CLASS EXAMPLE *******/
+// while(true){
+//     user_transaction = parseInt(prompt("How can I help you today?\nPress 1 for account balance\nPress 2 for deposit\nPress 3 for withdraw\nPress to Exit"))
+
+//     if(user_transaction < 1 || user_transaction > 2){
+//         console.log(`Thank you for visiting QCC bank!`)
+//         break
+//     }
+//     switch(user_transaction){
+//         case 1:
+//             console.log(`Your balance is ${balance}`)
+//             break
+//         case 2:
+//             let deposit = parseInt(prompt("How much do you want to deposit?"))
+//             if(deposit > 0){
+//                 balance += deposit
+//                 console.log(`Your new balance is ${balance}`)
+//             }
+//             else{
+//                 console.log(`Error! invalid amount`)
+//             }
+//             break
+//         case 3: // working on it 
+//             let withdraw = parseInt(prompt("How much do you want to deposit?"))
+//             if(withdraw > 0 ){
+//                 balance -= withdraw
+//                 console.log(`Your balance is now ${balance}`)
+//             }
+//             else{
+//                 console.log(`Error! invalid amount and not too much`)
+//             }
+//             break
+//         default:
+//             onsole.log(`Thank you for visiting QCC bank!`) 
+//             break    
+//     }
+// }
+
+let balance = 1000; ///////* I tried to add method like withdraw and unsufficient fund and type only numbers*////////
 while(true){
-    user_transaction = parseInt(prompt("How can I help you today?\nPress 1 for account balance\nPress 2 for deposit\nPress 3 for withdraw\nPress to Exit"))
+    user_transaction = parseInt(prompt("How can I help you today?\nPress 1 for account balance\nPress 2 for deposit\nPress 3 for withdraw\nPress 4 to exit"))
 
-    if(user_transaction < 1 || user_transaction > 2){
+    if(user_transaction === 4){
         console.log(`Thank you for visiting QCC bank!`)
         break
     }
+
     switch(user_transaction){
         case 1:
             console.log(`Your balance is ${balance}`)
@@ -116,26 +154,28 @@ while(true){
             let deposit = parseInt(prompt("How much do you want to deposit?"))
             if(deposit > 0){
                 balance += deposit
-                console.log(`Your new balance is ${balance}`)
+                console.log(`After deposit, your new balance is ${balance}`)
             }
-            else{
-                console.log(`Error! invalid amount`)
+            else if(deposit <= 0){ // added if user enter zero then is unsufficient
+                console.log(`Error: Unsufficient fund!`)
+            }
+            else {
+                console.log("Error: Please type numbers")
             }
             break
-        case 3: // working on it 
-            let withdraw = parseInt(prompt("How much do you want to deposit?"))
+        case 3: // I did try to make case 3 to withdraw
+            let withdraw = parseInt(prompt("How much do you want to withdraw?"))
             if(withdraw > 0 ){
                 balance -= withdraw
-                console.log(`Your balance is now ${balance}`)
+                console.log(`After withdraw, your new balance is ${balance}`)
+            }
+            else if(withdraw <= 0){
+                console.log(`Error: Invalid amount!`)
             }
             else{
-                console.log(`Error! invalid amount and not too much`)
+                console.log(`Error: Please enter numbers`)
             }
             break
-
-        default:
-            onsole.log(`Thank you for visiting QCC bank!`) // doesn't have to 
-            break    
     }
 }
 
@@ -151,7 +191,7 @@ for(let i = 0; i < num.length; i++){
     if(count > 0){
         positive.push(count);
     }
-    else if(count <0){
+    else if(count < 0){
         negative.push(count)
     }
 }
