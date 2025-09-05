@@ -142,7 +142,6 @@ while(true){
 
 
 console.log("---------- EXERCISE A ------------")
-
 let num = [-3, 10, 0, 8, -9, 5, -2, 8, 6, -1];
 let positive = [];
 let negative = [];
@@ -171,36 +170,38 @@ while(attempt_counter > 0){
         console.log("Welcome to your account!");
         break
     }
-    else if(user_pin != PIN){
-        console.log("Incorrect pin number, try again");
+    else{
         attempt_counter--;
+        if(attempt_counter === 2){
+            console.log("Incorrect pin number, last two chance!");
+        }
+        else if(attempt_counter === 1){
+            console.log("Incorrect pin number, last chance!");
+        }
+        else if (attempt_counter === 0) { 
+            console.log("Account is locked!");
+        }
     }
 }
-if (attempt_counter === 0) { 
-    console.log("Account is locked!");
-}
 
 
-
-    /* let PIN = 1234; // This is from class 
-    let attempt_counter = 3;
-    while(true){
-        //collect a pin number
-        let user_pin = parseInt(prompt("Enter a pin number"))
-        //pin doesn't match
-        if(){
-            user_pin = parseInt(prompt("Enter a pin number"))
-            attempt_counter--
-
-        }
-        else {
-            console.log(`welcome to your account`)
-            break
-
-        }
-        // attempt_counter reaches to zero
-        if(){
-            console.log("ACCOUNT IS LOCKED")
-            break
-        }
-    } */
+/* let PIN = 1234; // This is from class //
+let attempt_counter = 3;
+while(true){
+    //collect a pin number
+    let user_pin = parseInt(prompt("Enter a pin number"))
+    //pin doesn't match
+    if(){
+        user_pin = parseInt(prompt("Enter a pin number"))
+        attempt_counter--
+    }
+    else {
+        console.log(`welcome to your account`)
+        break
+    }
+    // attempt_counter reaches to zero
+    if(){
+        console.log("ACCOUNT IS LOCKED")
+        break
+    }
+} */
