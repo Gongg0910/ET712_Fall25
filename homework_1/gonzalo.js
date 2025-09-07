@@ -27,7 +27,7 @@ for (let attempt = 0; attempt < 5; attempt++) {
         }
     }
     console.log(message)
-}
+}  
 
 
 
@@ -66,7 +66,7 @@ const seek = 10;
 
 for(let i = 0; i < seek; i++){
     do {
-        string_input = prompt(`Please enter number between ${i + 1} to ${seek}`);
+        string_input = prompt(`Please enter any numbers.\nYou only have ${seek - i} attempts`);
         number_input = parseFloat(string_input);
         if (string_input === null){
             alert("You clicked cancel to quit");
@@ -83,22 +83,19 @@ for(let i = 0; i < seek; i++){
         }
 }
 
-console.log("Collected numbers:", collect_numbers); 
+console.log("Collected numbers:", collect_numbers);
 
-let numbers = [3, 5, 7];
+let numbers = [3, 5, 7];  // Multiply by 3 5 and 7
 
+// Loop // 
 for(let i = 0; i < numbers.length; i++ ){
     let multiply = numbers[i];
-    console.log(`\nNumber multiplies of ${multiply}`)
+    let result = `\nNumber multiplies of ${multiply}\n`;
     for(let r = 0; r < collect_numbers.length; r++){
-        console.log(collect_numbers[r] * multiply)
+        result += (collect_numbers[r] * multiply);
+        if (r < collect_numbers.length - 1){
+            result += ", ";
+        }
     }
-}
-
-// let three = collect_numbers.map(element => element * multiply[0])   ////// NON loop ///// 
-// let five  = collect_numbers.map(element => element * multiply[1])
-// let seven = collect_numbers.map(element => element * multiply[2])
-
-// console.log(`${three}      numbers are multiples of ${multiply[0]}`)
-// console.log(`${five}    numbers are multiples of ${multiply[1]}`)
-// console.log(`${seven}    numbers are multiples of ${multiply[2]}`)
+    console.log(result.trim());
+} 
