@@ -53,7 +53,6 @@ function areaRectangle(lenght, width){
 }
 
 // define a function to check a temperature. If the temperature is greater than 75, returns 'true', otherise, it return a 'false'
-
 function checkTemperature(temperature){
     if(temperature >= 75){
         console.log("The temperature is TOO HOT ASD aDDSAfasd");
@@ -70,8 +69,36 @@ function checkTemperature(temperature){
 }
 
 
+// lab 4, introduction to function, Gonzalo Guerra  ////// HOMEWORK //////
+const attempt = 5;
+function checkName() {
+  for (let i = 0; i < attempt; i++) {
+    let enter_name = prompt("Enter your name:");
 
-// lab 4, introduction to function, Gonzalo Guerra
+    if (enter_name === 'Gonzalo' || enter_name === 'gonzalo') {
+      console.log(`Welcome ${enter_name.toUpperCase()} to the class!`);
+      break; 
+    } 
+    else if (enter_name === null) {  // if user cancel
+      alert("You forgot to enter a name. Enter a name again."); 
+    } 
+    else if (enter_name !== null && enter_name.trim() === '') {  // if user enter blank
+      alert("You entered an empty name. Please enter a name."); 
+    } 
+    else if (!isNaN(enter_name)) {  // if user enter number
+      alert(`${enter_name} is invalid! Enter a name again`); 
+    } 
+    else {   // if user enter wrong name or different words. 
+      alert(`${enter_name} is an invalid name. Enter a name again.`); 
+    }
+  }
+}
+
+
+
+
+
+///// This is other method without using for loop //////
 /* function capitalize(string) {
     if (typeof string !== 'string' || string.length === 0) {
       return ''; 
@@ -91,48 +118,3 @@ function checkName(name){
         alert(`${name} is invalid! Enter a name again:`)
     }
 } */
-
-
-function checkName(name){
-
-    let greet = console.log(prompt(`Is your name ${name}?`))
-    if (greet = 'gonzalo'){
-        console.log(`Welcome ${greet} to the class`)
-    }
-    else {
-        consol.log("Umm who are you")
-    }
-
-}
-
-
-
-
-
-
-
-function greet(firstName, lastName){
-    console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
-}
-    
-
-
-
-function printMsg(message, numCount){
-    for(counter = 1; counter <= numCount ; counter++){
-    console.log(`Counter ${counter} = ${message}`)
-    }
-}
-
-
-
-
-function sumXY(){
-    let x = 7, y = -3;
-    return x+y;
-    console.log("LINE AFTER RETURN");
-}
-let sum1 = sumXY()
-console.log(sum1);
-
-    
