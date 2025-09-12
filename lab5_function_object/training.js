@@ -93,21 +93,46 @@ function yell(message = ""){
     }
 }
 
+
+
+
+///////  lab 5 ///////
+
 // Lab EXERCISE 1 description (JS object):
-const mycalculator = {
+const myCalculator = {
+    
     // property 
-    message: "",
-    side : 2,
+    message: "I am a calculator.",
+    side: 2,
 
-    // method      mycalculator.area_square()
-    area_square(){
-        return`square ${Math.pow(this.side,2)}`
-
+    // method      
+    area_square: function(){
+        console.log("------ Exercise 1 ------")
+        return`${this.message} Area of the square is ${Math.pow(this.side, 2)}`
+    },
+    volume_cube: function(){
+        console.log("------ Exercise 1 ------")
+        return`${this.message} Volume of the cube is ${Math.pow(this.side, 3)}`
     }
+};
 
 
+
+
+// Lab exercise 2 description (JS exception handling):
+function readProperty(obj, prop, customer){
+    try{
+        console.log("------ Exercise 2 ------")
+        return `Here it is your ${obj[prop]} car, ${customer}`;
+    }
+    catch(error){
+        return `Error accessing property`;
+    }
 }
-
-
+const myCar = {
+    model: 'Toyota',
+    model_1: 'Nissan',
+    model_2: 'Honda'
+};
 
 
