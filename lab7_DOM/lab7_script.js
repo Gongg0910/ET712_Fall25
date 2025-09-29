@@ -61,4 +61,33 @@ btn_rectangle.addEventListener("click", function(){
 
 
 
+/* Lab 7 Homework */
 
+
+let p_1 = document.querySelector('p.ps1');
+p_1.addEventListener('mouseout', function() {
+
+    p_1.textContent = "Gonzalo Guerra"; 
+});
+
+let p_2 = document.querySelector('p.ps2');
+p_2.addEventListener('click', function() {
+
+    p_2.style.fontSize = '25px';
+    p_2.style.color = 'olive';
+});
+
+
+
+let changeColor = document.querySelector('div.divs2');
+changeColor.addEventListener('click', function() {
+
+    changeColor.style.backgroundColor = 'indigo';
+});
+
+
+let changeSize = document.querySelector('div.divs3'); 
+document.addEventListener('keydown', function(event) {
+
+    changeSize.style.width = '300px'; 
+});
