@@ -59,9 +59,11 @@
     padding: 3rem;
 }
 
-
-
-
+.username_paragraph{
+    color: red;
+    font-size: 0.9rem;
+    font-style: italic;
+}
 
 
 /* Lab 7 Homework */
@@ -72,3 +74,38 @@ div.divs2, div.divs3{
     background-color: aqua;
     margin: 20px;
 }
+
+/* ========================= */
+
+
+.aaa{
+    width: 700px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -57,24 +57,71 @@ btn_rectangle.addEventListener("click", function(){
 
 
 
+// SEP 30
+// event handler
+ let btnpress = document.querySelector(".btnpress")
+ btnpress.onclick = function(){alert(`${new Date()}`)}
 
 
 
 
+ // mouse events
+ let x = document.querySelector(".x")
+ let circle_paragraph = document.querySelector(".circle_paragraph")
+ x.onmouseover = function(){
+    //circle_paragraph.textContent += "- CIRCLE -"
+    circle_paragraph.innerHTML += '<img src="images/fish.gif" class="aaa">';
+}
+
+
+
+ // event listener
+ // collect the element
+ let box_color = document.querySelector(".box_color")
+ // function to randomly pick a color as a rgb value
+
+const randomRGB = function(){
+    let red = Math.floor(Math.random()*255)
+    let green = Math.floor(Math.random()*255)
+    let blue = Math.floor(Math.random()*255)
+    return `rgb(${red}, ${green}, ${blue})`
+}
+box_color.addEventListener("mouseout",function(){
+    box_color.style.backgroundColor = randomRGB()
+
+})
+
+
+
+// key event
+// collect the element
+let inputtext = document.querySelector(".inputtext")
+let username_paragraph = document.querySelector(".username_paragraph")
+
+inputtext.addEventListener("keydown", function(){
+    username_paragraph.textContent = "Username MUST have 3+ characters"
+})
+
+
+
+
+
+
+
+// LAB Exercise 
+/* ============================================================== */
 /* Lab 7 Homework */
+let ps1 = document.querySelector(".ps1");
+ps1.addEventListener("mouseout", function() {
 
-
-let p_1 = document.querySelector('p.ps1');
-p_1.addEventListener('mouseout', function() {
-
-    p_1.textContent = "Gonzalo Guerra"; 
+    ps1.textContent = "Gonzalo Guerra"; 
 });
 
-let p_2 = document.querySelector('p.ps2');
-p_2.addEventListener('click', function() {
+let ps2 = document.querySelector(".ps2");
+ps2.addEventListener("click", function() {
 
-    p_2.style.fontSize = '25px';
-    p_2.style.color = 'olive';
+    ps2.style.fontSize = "25px";
+    ps2.style.color = "olive";
 });
 
 
@@ -85,9 +132,24 @@ changeColor.addEventListener('click', function() {
     changeColor.style.backgroundColor = 'indigo';
 });
 
-
 let changeSize = document.querySelector('div.divs3'); 
 document.addEventListener('keydown', function(event) {
-
+    
     changeSize.style.width = '300px'; 
 });
+ /* ===================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
