@@ -23,19 +23,14 @@ window.addEventListener("resize", function(){
 })
 
 // load event: when the page fincihes laoding, open an alert dialog
-window.addEventListener("load", function(){
+/* window.addEventListener("load", function(){
     this.alert("Page fully loaded!")
-}) 
-
-
-
-
-
+})  */
 
 
 // MODAL WINDOW
 const openmodal1 = document.querySelector("#openmodal1")
-const modalOverlay = document.querySelector("#modaOverlay")
+const modalOverlay = document.querySelector("#modalOverlay")
 const closeBtn = document.querySelector("#closeBtn")
 
 openmodal1.addEventListener("click", function(){
@@ -48,4 +43,21 @@ closeBtn.addEventListener("click", function(){
 
 
 
+/* Homework for lab 8 */
 
+let count = 0;
+const counting = document.querySelector("#counting");
+const circle = document.querySelector(".circle");
+const reset_button = document.querySelector(".reset_button");
+
+circle.addEventListener('click', function(){
+  count++;
+  counting.textContent = count;
+});
+
+reset_button.addEventListener('click', function(){
+  count = 0;
+  counting.textContent = count;
+});
+
+/* Homework for lab 8 */
