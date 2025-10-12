@@ -76,3 +76,30 @@ btnleft.addEventListener("click", function(){
     scrollGallery(-500)
 })
 
+
+
+
+
+
+
+/* Homework for lab 8 */
+
+let count = 0;
+const counting = document.querySelector("#counting");
+const circle = document.querySelector(".circle");
+const reset_button = document.querySelector(".reset_button");
+
+circle.addEventListener('click', function(){
+  count++;
+  counting.textContent = count;
+});
+
+reset_button.addEventListener('click', function(){
+  count = 0;
+  counting.textContent = count;
+});
+
+/* Homework for lab 8 */
+
+
+
