@@ -44,3 +44,51 @@ closeBtn.addEventListener("click", function(){
 
 
 
+
+
+
+/* Homework lab 9 */
+
+const main_homework = document.querySelector("#main_homework");
+window.addEventListener("scroll", function(){
+    if (window.scrollY > 1000) {
+        main_homework.style.backgroundColor = '#d504ffff';
+    }
+    else if (window.scrollY > 0){
+        main_homework.style.backgroundColor = '#ff5e00ff'
+    }
+    else {
+        main_homework.style.backgroundColor = '#f0f0f0';
+    }
+});
+
+
+const width_colors = main_homework.querySelector('h1');
+function widthResize() {
+    const width = window.innerWidth;
+    if (width > 1000) {
+        width_colors.style.color = 'blue';
+    } 
+    else if (width > 700) {
+        width_colors.style.color = 'green';
+    } 
+    else if (width > 300) {
+        width_colors.style.color = 'orange';
+    } 
+    else {
+        width_colors.style.color = '#ff0000ff';
+    }
+}
+
+window.addEventListener("resize", widthResize);
+widthResize(); 
+
+
+let count_width = document.querySelector(".resize_width")
+window.addEventListener("scroll", function(){
+    let x_pixels = window.scrollX
+    count_width.innerHTML = `${x_pixels} px away`
+})
+
+/* Homework lab 9 */
+
