@@ -1,0 +1,10 @@
+*{
+    background-color: gainsboro;
+    display: block;
+}
+
+.fabolous{
+    box-shadow: 2px 3px 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 255, 255);
+}
