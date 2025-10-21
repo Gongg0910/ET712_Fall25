@@ -43,18 +43,85 @@ usernameInput.addEventListener("input", function(){
     usernamevalue = usernameInput.value
     usernamevaluelenght = usernamevalue.length
 
-    if(usernamevaluelenght >= 5){
+    if(usernamevaluelenght >= 5 && usernamevaluelenght < 20){
         username_error_msg.textContent = "" 
         btnsubmit.disabled = false
+        usernameInput.classList.add("active_input_valid")
   
+    }
+    else if(usernamevaluelenght === 20){
+        username_error_msg.textContent = "username can't be 20+ characters"
+        
     }
     else{
         username_error_msg.textContent = "username must be between 5 and 20 characters"
         btnsubmit.disabled = true
+        usernameInput.classList.remove("active_input_valid")
+        usernameInput.classList.add("active_input_invalid")
     }
 })
 
 
 
+/* 
+ * Oct 21, 2025
+ *
+ */
+// collect the element
+
+const inputpassword = document.querySelector("#password")
+
+// add a focus event to the input
+inputpassword.addEventListener("focus", function(){
+    inputpassword.classList.add("active_input_valid")
+})
 
 
+// add a blur event to an input
+inputpassword.addEventListener("blur", function(){
+    inputpassword.classList.remove("active_input_valid")
+    inputpassword.classList.add("active_input_invalid")
+
+})
+
+
+
+
+// ------ SHUFFLED WORD ------ 
+const originalWord = "javascript"
+
+// function to shuffle the original word 
+function shuffleWord(word){
+    return word
+        .split("")
+        .sort(()=>Math.random()-0.5)
+        .join("")
+}
+
+
+// collect the elements
+const scrambleword = document.querySelector("#shuffleword")
+const guessInput = document.querySelector("#guessInput")
+const wordfeedback = document.querySelector('#wordfeedback')
+
+// show suffled word 
+const shuffled = shuffleWord(originalWord)
+scrambleword.textContent = shuffled
+
+// add the input event
+guessInput.addEventListener("input", function(){
+    // collect characters type in the input without begin/end space and lower case 
+    const guess = guessInput.value
+
+    if(guess === originalWord){
+        wordfeedback.textContent = "Correct!";
+        guessInput.classList.add("active_input_valid")
+
+    }
+    else{
+        wordfeedback.textContent = "Try again";
+        guessInput.classList.remove("active_input_valid")
+        guessInput.classList.add("active_input_invalid")
+
+    }
+})
