@@ -1,0 +1,77 @@
+.align_box {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+.box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 3px 4px 6px rgb(2, 91, 255);
+    width: 200px;
+}
+
+.seperate_group {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_color {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #1100ff;
+    border-radius: 4px;
+}
+
+#feedback {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #001eff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+
+.available {
+    color: green;
+}
+
+.taken {
+    color: red;
+}
+
+.active_input_invalid{
+    border: crimson 3px solid;
+    box-shadow: 0px 0px 3px 2px crimson;
+}
+
+.active_input_valid{
+    border: green 3px solid;
+    box-shadow: 0px 0px 3px 2px green;
+}
+
+.re_enter_username{
+    color: red;
+}
