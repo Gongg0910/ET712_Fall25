@@ -1,0 +1,75 @@
+div.gallery {
+    border: 1px solid #ccc;
+    background-color: rgb(255, 230, 0);
+    height: 420px;
+}
+
+div.gallery:hover {
+  border: 1px solid #292ce9;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+  
+  
+/* lab 10  */
+
+.input_color {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #1100ff;
+    border-radius: 4px;
+    
+    
+}
+
+#feedback {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.available {
+    color: green;
+}
+
+.taken {
+    color: red;
+}
+
+.active_input_invalid{
+    border: crimson 3px solid;
+    box-shadow: 0px 0px 3px 2px crimson;
+}
+
+.active_input_valid{
+    border: green 3px solid;
+    box-shadow: 0px 0px 3px 2px green;
+}
+
+.re_enter_username{
+    color: red;
+}
+
+
+.centering{
+    text-align: center;
+}
+  
