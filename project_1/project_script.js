@@ -1,6 +1,5 @@
-
 /// lion ////
-const lion = ['lion'];
+const animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
 
 const lion_input = document.querySelector("#lion_input");
 const lion_feedback = document.querySelector("#lion_feedback");
@@ -13,31 +12,25 @@ lion_input.addEventListener("input", function() {
         lion_feedback.textContent = 'Please enter name';
         lion_input.classList.remove("active_input_valid")
         lion_feedback.classList = 're_enter_username';
-        submit_register.disabled = true;
     }
-    else if (lion.includes(lion_name)) {
+    else if (animals_list.includes(lion_name)) {
         lion_feedback.textContent = 'That is correct!';
         lion_feedback.classList = 'available';
         lion_input.classList.remove("active_input_invalid")
         lion_input.classList.add("active_input_valid")
-        submit_register.disabled = true;
     } 
     else {
         lion_feedback.textContent = 'Wrong name';
         lion_feedback.classList = 'taken';
         lion_input.classList.remove("active_input_valid")
         lion_input.classList.add("active_input_invalid")
-        submit_register.disabled = false;
     }
 });
-
 /// lion ////
 
 
 
 /// horses ////
-const horse = ['horse'];
-
 const horse_input = document.querySelector("#horse_input");
 const horse_feedback = document.querySelector("#horse_feedback");
 
@@ -49,22 +42,205 @@ horse_input.addEventListener("input", function() {
         horse_feedback.textContent = 'Please enter name';
         horse_input.classList.remove("active_input_valid")
         horse_feedback.classList = 're_enter_username';
-        submit_register.disabled = true;
     }
-    else if (horse.includes(horse_name)) {
+    else if (animals_list.includes(horse_name)) {
         horse_feedback.textContent = 'That is correct!';
         horse_feedback.classList = 'available';
         horse_input.classList.remove("active_input_invalid")
         horse_input.classList.add("active_input_valid")
-        submit_register.disabled = true;
     } 
     else {
         horse_feedback.textContent = 'Wrong name';
         horse_feedback.classList = 'taken';
         horse_input.classList.remove("active_input_valid")
         horse_input.classList.add("active_input_invalid")
-        submit_register.disabled = false;
     }
 });
+/// horse ////
 
-/// lion ////
+
+
+/// dog ////
+const dog_input = document.querySelector("#dog_input");
+const dog_feedback = document.querySelector("#dog_feedback");
+
+dog_input.addEventListener("input", function() {
+
+    const dog_name = dog_input.value;
+
+    if (dog_name === '') {
+        dog_feedback.textContent = 'Please enter name';
+        dog_input.classList.remove("active_input_valid")
+        dog_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(dog_name)) {
+        dog_feedback.textContent = 'That is correct!';
+        dog_feedback.classList = 'available';
+        dog_input.classList.remove("active_input_invalid")
+        dog_input.classList.add("active_input_valid")
+    } 
+    else {
+        dog_feedback.textContent = 'Wrong name';
+        dog_feedback.classList = 'taken';
+        dog_input.classList.remove("active_input_valid")
+        dog_input.classList.add("active_input_invalid")
+    }
+});
+/// dog ////
+
+
+/// cat ////
+const cat_input = document.querySelector("#cat_input");
+const cat_feedback = document.querySelector("#cat_feedback");
+
+cat_input.addEventListener("input", function() {
+
+    const cat_name = cat_input.value;
+
+    if (cat_name === '') {
+        cat_feedback.textContent = 'Please enter name';
+        cat_input.classList.remove("active_input_valid")
+        cat_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(cat_name)) {
+        cat_feedback.textContent = 'That is correct!';
+        cat_feedback.classList = 'available';
+        cat_input.classList.remove("active_input_invalid")
+        cat_input.classList.add("active_input_valid")
+    } 
+    else {
+        cat_feedback.textContent = 'Wrong name';
+        cat_feedback.classList = 'taken';
+        cat_input.classList.remove("active_input_valid")
+        cat_input.classList.add("active_input_invalid")
+    }
+});
+/// cat ////
+
+
+/// bird ////
+const bird_input = document.querySelector("#bird_input");
+const bird_feedback = document.querySelector("#bird_feedback");
+
+bird_input.addEventListener("input", function() {
+
+    const bird_name = bird_input.value;
+
+    if (bird_name === '') {
+        bird_feedback.textContent = 'Please enter name';
+        bird_input.classList.remove("active_input_valid")
+        bird_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(bird_name)) {
+        bird_feedback.textContent = 'That is correct!';
+        bird_feedback.classList = 'available';
+        bird_input.classList.remove("active_input_invalid")
+        bird_input.classList.add("active_input_valid")
+    } 
+    else {
+        bird_feedback.textContent = 'Wrong name';
+        bird_feedback.classList = 'taken';
+        bird_input.classList.remove("active_input_valid")
+        bird_input.classList.add("active_input_invalid")
+    }
+});
+/// bird ////
+
+/// bear ////
+const bear_input = document.querySelector("#bear_input");
+const bear_feedback = document.querySelector("#bear_feedback");
+
+bear_input.addEventListener("input", function() {
+
+    const bear_name = bear_input.value;
+
+    if (bear_name === '') {
+        bear_feedback.textContent = 'Please enter name';
+        bear_input.classList.remove("active_input_valid")
+        bear_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(bear_name)) {
+        bear_feedback.textContent = 'That is correct!';
+        bear_feedback.classList = 'available';
+        bear_input.classList.remove("active_input_invalid")
+        bear_input.classList.add("active_input_valid")
+    } 
+    else {
+        bear_feedback.textContent = 'Wrong name';
+        bear_feedback.classList = 'taken';
+        bear_input.classList.remove("active_input_valid")
+        bear_input.classList.add("active_input_invalid")
+    }
+});
+/// bear ////
+
+
+/// rabbit ////
+const rabbit_input = document.querySelector("#rabbit_input");
+const rabbit_feedback = document.querySelector("#rabbit_feedback");
+
+rabbit_input.addEventListener("input", function() {
+
+    const rabbit_name = rabbit_input.value;
+
+    if (rabbit_name === '') {
+        rabbit_feedback.textContent = 'Please enter name';
+        rabbit_input.classList.remove("active_input_valid")
+        rabbit_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(rabbit_name)) {
+        rabbit_feedback.textContent = 'That is correct!';
+        rabbit_feedback.classList = 'available';
+        rabbit_input.classList.remove("active_input_invalid")
+        rabbit_input.classList.add("active_input_valid")
+    } 
+    else {
+        rabbit_feedback.textContent = 'Wrong name';
+        rabbit_feedback.classList = 'taken';
+        rabbit_input.classList.remove("active_input_valid")
+        rabbit_input.classList.add("active_input_invalid")
+    }
+});
+/// rabbit ////
+
+
+/// fish ////
+const fish_input = document.querySelector("#fish_input");
+const fish_feedback = document.querySelector("#fish_feedback");
+
+fish_input.addEventListener("input", function() {
+
+    const fish_name = fish_input.value;
+
+    if (fish_name === '') {
+        fish_feedback.textContent = 'Please enter name';
+        fish_input.classList.remove("active_input_valid")
+        fish_feedback.classList = 're_enter_username';
+    }
+    else if (animals_list.includes(fish_name)) {
+        fish_feedback.textContent = 'That is correct!';
+        fish_feedback.classList = 'available';
+        fish_input.classList.remove("active_input_invalid")
+        fish_input.classList.add("active_input_valid")
+    } 
+    else {
+        fish_feedback.textContent = 'Wrong name';
+        fish_feedback.classList = 'taken';
+        fish_input.classList.remove("active_input_valid")
+        fish_input.classList.add("active_input_invalid")
+    }
+});
+/// fish ////
+
+
+
+
+/* still work in progess */
+// mouse events
+let x = document.querySelector(".x")
+let circle_paragraph = document.querySelector(".circle_paragraph")
+x.onmouseover = function(){
+    //circle_paragraph.textContent += "- CIRCLE -"
+    circle_paragraph.innerHTML += '<img src="images/ants.gif" class="aaa">';
+}
+/* still work in progess */
