@@ -1,7 +1,7 @@
 div.gallery {
     border: 1px solid #ccc;
     background-color: rgb(255, 230, 0);
-    height: 420px;
+    height: 450px;
 }
 
 div.gallery:hover {
@@ -36,9 +36,7 @@ div.desc {
   width: 100%;
   padding: 8px;
   border: 1px solid #1100ff;
-  border-radius: 4px;
-    
-    
+  border-radius: 4px;  
 }
 
 #feedback {
@@ -67,16 +65,25 @@ div.desc {
 .re_enter_username{
   color: red;
 }
-
-
 .centering{
   text-align: center;
+}
+
+.centering_feedback{
+  width: 50%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px
 }
   
 
 
-/* still work in progess */
-.circle{
+/* ant colony */
+.image_nest{
   width: 200px;
   height: 200px;
   border-radius: 30%;
@@ -87,15 +94,80 @@ div.desc {
   height: 150px;
 }
 
-.playing_around{
+.centerting_ant_nest{
   width: 100%; 
   height: 200px;
-  border: 3px red solid; 
+   
   margin-top: 950px;
-  display: flex; /* Makes the parent a flex container */
-  justify-content: center; /* Centers items horizontally */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
 
 }
 
-/* still work in progess */
+/* ant colony */
+
+
+
+/* Photographer take picture of animals version one */
+
+.photographer{
+  display: flex; 
+  margin-left: 200px; 
+  gap: 12px; 
+  font-size: 30px;
+}
+
+.gallery-container_1, .maincontainer_1{
+  width: 1800px;
+  margin: auto;
+}
+
+.maincontainer_1{
+  position: relative;
+  z-index: 0;
+}
+
+.gallery-container_1{
+  position: relative;
+  z-index: 1;
+  overflow-x: scroll; 
+  white-space: nowrap; 
+}
+
+.gallery-image_1{
+  display: inline-block;
+  width: 596px;
+  height: 390px;
+}
+
+.btnright_1, .btnleft_1{
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  font-size: 3em;
+  color: rgb(0, 149, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.btnright_1:hover, .btnleft_1:hover{
+  color: crimson;
+  cursor: pointer;
+}
+
+.btnleft_1{
+  left: 0%;
+}
+
+.btnright_1{
+  right: 0%;
+}
+/* Photographer take picture of animals version one */
+
+
+
+
+
+
+

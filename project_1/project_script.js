@@ -1,6 +1,8 @@
-/// lion ////
 const animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
+// I tried to use thie method but if I type lion in below horse image it would be correct // 
 
+/// lion ////
+const lion_array = ['lion'];
 const lion_input = document.querySelector("#lion_input");
 const lion_feedback = document.querySelector("#lion_feedback");
 
@@ -9,11 +11,11 @@ lion_input.addEventListener("input", function() {
     const lion_name = lion_input.value;
 
     if (lion_name === '') {
-        lion_feedback.textContent = 'Please enter name';
+        lion_feedback.textContent = 'Please enter the name of animal';
         lion_input.classList.remove("active_input_valid")
         lion_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(lion_name)) {
+    else if (lion_array.includes(lion_name)) {
         lion_feedback.textContent = 'That is correct!';
         lion_feedback.classList = 'available';
         lion_input.classList.remove("active_input_invalid")
@@ -31,6 +33,7 @@ lion_input.addEventListener("input", function() {
 
 
 /// horses ////
+const horse_array = ['horse'];
 const horse_input = document.querySelector("#horse_input");
 const horse_feedback = document.querySelector("#horse_feedback");
 
@@ -39,11 +42,11 @@ horse_input.addEventListener("input", function() {
     const horse_name = horse_input.value;
 
     if (horse_name === '') {
-        horse_feedback.textContent = 'Please enter name';
+        horse_feedback.textContent = 'Please enter the name of animal';
         horse_input.classList.remove("active_input_valid")
         horse_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(horse_name)) {
+    else if (horse_array.includes(horse_name)) {
         horse_feedback.textContent = 'That is correct!';
         horse_feedback.classList = 'available';
         horse_input.classList.remove("active_input_invalid")
@@ -61,6 +64,7 @@ horse_input.addEventListener("input", function() {
 
 
 /// dog ////
+const dog_array = ['dog'];
 const dog_input = document.querySelector("#dog_input");
 const dog_feedback = document.querySelector("#dog_feedback");
 
@@ -69,11 +73,11 @@ dog_input.addEventListener("input", function() {
     const dog_name = dog_input.value;
 
     if (dog_name === '') {
-        dog_feedback.textContent = 'Please enter name';
+        dog_feedback.textContent = 'Please enter the name of animal';
         dog_input.classList.remove("active_input_valid")
         dog_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(dog_name)) {
+    else if (dog_array.includes(dog_name)) {
         dog_feedback.textContent = 'That is correct!';
         dog_feedback.classList = 'available';
         dog_input.classList.remove("active_input_invalid")
@@ -90,6 +94,7 @@ dog_input.addEventListener("input", function() {
 
 
 /// cat ////
+const cat_array = ['cat'];
 const cat_input = document.querySelector("#cat_input");
 const cat_feedback = document.querySelector("#cat_feedback");
 
@@ -98,11 +103,11 @@ cat_input.addEventListener("input", function() {
     const cat_name = cat_input.value;
 
     if (cat_name === '') {
-        cat_feedback.textContent = 'Please enter name';
+        cat_feedback.textContent = 'Please enter the name of animal';
         cat_input.classList.remove("active_input_valid")
         cat_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(cat_name)) {
+    else if (cat_array.includes(cat_name)) {
         cat_feedback.textContent = 'That is correct!';
         cat_feedback.classList = 'available';
         cat_input.classList.remove("active_input_invalid")
@@ -119,6 +124,7 @@ cat_input.addEventListener("input", function() {
 
 
 /// bird ////
+const bird_array = ['bird'];
 const bird_input = document.querySelector("#bird_input");
 const bird_feedback = document.querySelector("#bird_feedback");
 
@@ -127,11 +133,11 @@ bird_input.addEventListener("input", function() {
     const bird_name = bird_input.value;
 
     if (bird_name === '') {
-        bird_feedback.textContent = 'Please enter name';
+        bird_feedback.textContent = 'Please enter the name of animal';
         bird_input.classList.remove("active_input_valid")
         bird_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(bird_name)) {
+    else if (bird_array.includes(bird_name)) {
         bird_feedback.textContent = 'That is correct!';
         bird_feedback.classList = 'available';
         bird_input.classList.remove("active_input_invalid")
@@ -147,6 +153,7 @@ bird_input.addEventListener("input", function() {
 /// bird ////
 
 /// bear ////
+const bear_array = ['bear'];
 const bear_input = document.querySelector("#bear_input");
 const bear_feedback = document.querySelector("#bear_feedback");
 
@@ -155,11 +162,11 @@ bear_input.addEventListener("input", function() {
     const bear_name = bear_input.value;
 
     if (bear_name === '') {
-        bear_feedback.textContent = 'Please enter name';
+        bear_feedback.textContent = 'Please enter the name of animal';
         bear_input.classList.remove("active_input_valid")
         bear_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(bear_name)) {
+    else if (bear_array.includes(bear_name)) {
         bear_feedback.textContent = 'That is correct!';
         bear_feedback.classList = 'available';
         bear_input.classList.remove("active_input_invalid")
@@ -176,6 +183,7 @@ bear_input.addEventListener("input", function() {
 
 
 /// rabbit ////
+const rabbit_array = ['rabbit'];
 const rabbit_input = document.querySelector("#rabbit_input");
 const rabbit_feedback = document.querySelector("#rabbit_feedback");
 
@@ -184,11 +192,11 @@ rabbit_input.addEventListener("input", function() {
     const rabbit_name = rabbit_input.value;
 
     if (rabbit_name === '') {
-        rabbit_feedback.textContent = 'Please enter name';
+        rabbit_feedback.textContent = 'Please enter the name of animal';
         rabbit_input.classList.remove("active_input_valid")
         rabbit_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(rabbit_name)) {
+    else if (rabbit_array.includes(rabbit_name)) {
         rabbit_feedback.textContent = 'That is correct!';
         rabbit_feedback.classList = 'available';
         rabbit_input.classList.remove("active_input_invalid")
@@ -205,6 +213,7 @@ rabbit_input.addEventListener("input", function() {
 
 
 /// fish ////
+const fish_array = ['fish'];
 const fish_input = document.querySelector("#fish_input");
 const fish_feedback = document.querySelector("#fish_feedback");
 
@@ -213,11 +222,11 @@ fish_input.addEventListener("input", function() {
     const fish_name = fish_input.value;
 
     if (fish_name === '') {
-        fish_feedback.textContent = 'Please enter name';
+        fish_feedback.textContent = 'Please enter the name of animal';
         fish_input.classList.remove("active_input_valid")
         fish_feedback.classList = 're_enter_username';
     }
-    else if (animals_list.includes(fish_name)) {
+    else if (fish_array.includes(fish_name)) {
         fish_feedback.textContent = 'That is correct!';
         fish_feedback.classList = 'available';
         fish_input.classList.remove("active_input_invalid")
@@ -233,14 +242,46 @@ fish_input.addEventListener("input", function() {
 /// fish ////
 
 
-
-
-/* still work in progess */
-// mouse events
-let x = document.querySelector(".x")
-let circle_paragraph = document.querySelector(".circle_paragraph")
-x.onmouseover = function(){
+// mouse events to spawn ants
+let ant_colony = document.querySelector(".ant_colony")
+let spawning_ants = document.querySelector(".spawning_ants")
+ant_colony.onmouseover = function(){
     //circle_paragraph.textContent += "- CIRCLE -"
-    circle_paragraph.innerHTML += '<img src="images/ants.gif" class="aaa">';
+    spawning_ants.innerHTML += '<img src="images/ants.gif" class="aaa">';
 }
-/* still work in progess */
+// mouse events to spawn ants
+
+
+
+/* Photographer take picture of animals version one */
+
+const btnright_1 = document.querySelector(".btnright_1")
+const btnleft_1 = document.querySelector(".btnleft_1")
+
+function scrollGallery(pixels_1){
+    document.querySelector("div.gallery-container_1").scrollBy({
+        left: pixels_1,
+        behavior: "smooth"
+    })
+}
+btnright_1.addEventListener("click", function(){
+    scrollGallery(1800)
+})
+
+btnleft_1.addEventListener("click", function(){
+    scrollGallery(-1800)
+})
+
+/* Photographer take picture of animals version one */
+
+
+
+
+
+
+
+
+
+
+
+
