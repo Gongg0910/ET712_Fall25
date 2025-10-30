@@ -265,16 +265,51 @@ function scrollGallery(pixels_1){
     })
 }
 btnright_1.addEventListener("click", function(){
-    scrollGallery(1800)
+    scrollGallery(1520)
 })
 
 btnleft_1.addEventListener("click", function(){
-    scrollGallery(-1800)
+    scrollGallery(-1520)
 })
 
 /* Photographer take picture of animals version one */
 
 
+
+
+
+
+
+
+
+
+
+
+
+const openmodal1 = document.querySelector("#openmodal1")
+const modalOverlay = document.querySelector("#modalOverlay")
+const closeBtn = document.querySelector("#closeBtn")
+
+openmodal1.addEventListener("click", function(){
+    modalOverlay.style.display = "block"
+})
+
+closeBtn.addEventListener("click", function(){
+    modalOverlay.style.display = "none"
+})
+
+
+const openmodal_2 = document.querySelector("#openmodal_2")
+const modalOverlay_2 = document.querySelector("#modalOverlay_2")
+const closeBtn_2 = document.querySelector("#closeBtn_2")
+
+openmodal_2.addEventListener("click", function(){
+    modalOverlay_2.style.display = "block"
+})
+
+closeBtn_2.addEventListener("click", function(){
+    modalOverlay_2.style.display = "none"
+})
 
 
 
