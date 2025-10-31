@@ -1,8 +1,8 @@
-const animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
+// onst animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
 // I tried to use thie method but if I type lion in below horse image it would be correct // 
 
 /// lion ////
-const lion_array = ['lion'];
+const lion_array = ['lion', 'Lion'];
 const lion_input = document.querySelector("#lion_input");
 const lion_feedback = document.querySelector("#lion_feedback");
 
@@ -30,10 +30,8 @@ lion_input.addEventListener("input", function() {
 });
 /// lion ////
 
-
-
 /// horses ////
-const horse_array = ['horse'];
+const horse_array = ['horse', 'Horse'];
 const horse_input = document.querySelector("#horse_input");
 const horse_feedback = document.querySelector("#horse_feedback");
 
@@ -61,10 +59,8 @@ horse_input.addEventListener("input", function() {
 });
 /// horse ////
 
-
-
 /// dog ////
-const dog_array = ['dog'];
+const dog_array = ['dog', 'Dog'];
 const dog_input = document.querySelector("#dog_input");
 const dog_feedback = document.querySelector("#dog_feedback");
 
@@ -94,7 +90,7 @@ dog_input.addEventListener("input", function() {
 
 
 /// cat ////
-const cat_array = ['cat'];
+const cat_array = ['cat', 'Cat'];
 const cat_input = document.querySelector("#cat_input");
 const cat_feedback = document.querySelector("#cat_feedback");
 
@@ -124,7 +120,7 @@ cat_input.addEventListener("input", function() {
 
 
 /// bird ////
-const bird_array = ['bird'];
+const bird_array = ['bird', 'Bird'];
 const bird_input = document.querySelector("#bird_input");
 const bird_feedback = document.querySelector("#bird_feedback");
 
@@ -152,8 +148,9 @@ bird_input.addEventListener("input", function() {
 });
 /// bird ////
 
+
 /// bear ////
-const bear_array = ['bear'];
+const bear_array = ['bear', 'Bear'];
 const bear_input = document.querySelector("#bear_input");
 const bear_feedback = document.querySelector("#bear_feedback");
 
@@ -183,7 +180,7 @@ bear_input.addEventListener("input", function() {
 
 
 /// rabbit ////
-const rabbit_array = ['rabbit'];
+const rabbit_array = ['rabbit', 'Rabbit'];
 const rabbit_input = document.querySelector("#rabbit_input");
 const rabbit_feedback = document.querySelector("#rabbit_feedback");
 
@@ -213,7 +210,7 @@ rabbit_input.addEventListener("input", function() {
 
 
 /// fish ////
-const fish_array = ['fish'];
+const fish_array = ['fish', 'Fish'];
 const fish_input = document.querySelector("#fish_input");
 const fish_feedback = document.querySelector("#fish_feedback");
 
@@ -254,7 +251,6 @@ ant_colony.onmouseover = function(){
 
 
 /* Photographer take picture of animals version one */
-
 const btnright_1 = document.querySelector(".btnright_1")
 const btnleft_1 = document.querySelector(".btnleft_1")
 
@@ -276,16 +272,7 @@ btnleft_1.addEventListener("click", function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* 8 images of animals so kids can read before taking a quiz */
 const openmodal1 = document.querySelector("#openmodal1")
 const modalOverlay = document.querySelector("#modalOverlay")
 const closeBtn = document.querySelector("#closeBtn")
@@ -293,7 +280,6 @@ const closeBtn = document.querySelector("#closeBtn")
 openmodal1.addEventListener("click", function(){
     modalOverlay.style.display = "block"
 })
-
 closeBtn.addEventListener("click", function(){
     modalOverlay.style.display = "none"
 })
@@ -306,9 +292,124 @@ const closeBtn_2 = document.querySelector("#closeBtn_2")
 openmodal_2.addEventListener("click", function(){
     modalOverlay_2.style.display = "block"
 })
-
 closeBtn_2.addEventListener("click", function(){
     modalOverlay_2.style.display = "none"
+})
+
+
+const openmodal_3 = document.querySelector("#openmodal_3")
+const modalOverlay_3 = document.querySelector("#modalOverlay_3")
+const closeBtn_3 = document.querySelector("#closeBtn_3")
+
+openmodal_3.addEventListener("click", function(){
+    modalOverlay_3.style.display = "block"
+})
+closeBtn_3.addEventListener("click", function(){
+    modalOverlay_3.style.display = "none"
+})
+
+
+const openmodal_4 = document.querySelector("#openmodal_4")
+const modalOverlay_4 = document.querySelector("#modalOverlay_4")
+const closeBtn_4 = document.querySelector("#closeBtn_4")
+
+openmodal_4.addEventListener("click", function(){
+    modalOverlay_4.style.display = "block"
+})
+closeBtn_4.addEventListener("click", function(){
+    modalOverlay_4.style.display = "none"
+})
+
+
+const openmodal_5 = document.querySelector("#openmodal_5")
+const modalOverlay_5 = document.querySelector("#modalOverlay_5")
+const closeBtn_5 = document.querySelector("#closeBtn_5")
+
+openmodal_5.addEventListener("click", function(){
+    modalOverlay_5.style.display = "block"
+})
+closeBtn_5.addEventListener("click", function(){
+    modalOverlay_5.style.display = "none"
+})
+
+
+const openmodal_6 = document.querySelector("#openmodal_6")
+const modalOverlay_6 = document.querySelector("#modalOverlay_6")
+const closeBtn_6 = document.querySelector("#closeBtn_6")
+
+openmodal_6.addEventListener("click", function(){
+    modalOverlay_6.style.display = "block"
+})
+closeBtn_6.addEventListener("click", function(){
+    modalOverlay_6.style.display = "none"
+})
+
+
+const openmodal_7 = document.querySelector("#openmodal_7")
+const modalOverlay_7 = document.querySelector("#modalOverlay_7")
+const closeBtn_7 = document.querySelector("#closeBtn_7")
+
+openmodal_7.addEventListener("click", function(){
+    modalOverlay_7.style.display = "block"
+})
+closeBtn_7.addEventListener("click", function(){
+    modalOverlay_7.style.display = "none"
+})
+
+
+const openmodal_8 = document.querySelector("#openmodal_8")
+const modalOverlay_8 = document.querySelector("#modalOverlay_8")
+const closeBtn_8 = document.querySelector("#closeBtn_8")
+
+openmodal_8.addEventListener("click", function(){
+    modalOverlay_8.style.display = "block"
+})
+closeBtn_8.addEventListener("click", function(){
+    modalOverlay_8.style.display = "none"
+})
+/* 8 images of animals so kids can read before taking a quiz */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* giant squid */
+let btnscrollby = document.querySelector(".btnscrollby")
+let content = document.querySelector("#content")
+btnscrollby.addEventListener("click", function(){
+    window.scrollBy(5000, 0)
+})
+
+
+
+
+let count_width = document.querySelector(".resize_width")
+window.addEventListener("scroll", function(){
+    let x_pixels = window.scrollX
+    count_width.innerHTML = `${x_pixels} px away`
+})
+
+
+
+
+let displaypexels = document.querySelector(".displaypexels")
+
+window.addEventListener("scroll", function(){
+    let y_pixels = window.scrollY
+    displaypexels.innerHTML = `${y_pixels} px away from the top`
+})
+
+window.addEventListener("resize", function(){
+    displaypexels.style.backgroundColor = "crimson"
 })
 
 
@@ -316,7 +417,36 @@ closeBtn_2.addEventListener("click", function(){
 
 
 
+const main_homework = document.querySelector("#main_homework");
+window.addEventListener("scroll", function(){
+    if (window.scrollY > 1000) {
+        main_homework.style.backgroundColor = '#d504ffff';
+    }
+    else if (window.scrollY > 0){
+        main_homework.style.backgroundColor = '#ff5e00ff'
+    }
+    else {
+        main_homework.style.backgroundColor = '#f0f0f0';
+    }
+});
 
 
+const width_colors = main_homework.querySelector('h1');
+function widthResize() {
+    const width = window.innerWidth;
+    if (width > 1000) {
+        width_colors.style.color = 'blue';
+    } 
+    else if (width > 700) {
+        width_colors.style.color = 'green';
+    } 
+    else if (width > 300) {
+        width_colors.style.color = 'orange';
+    } 
+    else {
+        width_colors.style.color = '#ff0000ff';
+    }
+}
 
-
+window.addEventListener("resize", widthResize);
+widthResize(); 
