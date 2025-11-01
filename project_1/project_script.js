@@ -2,7 +2,7 @@
 // I tried to use thie method but if I type lion in below horse image it would be correct // 
 
 /// lion ////
-const lion_array = ['lion', 'Lion'];
+const lion_array = ['lion', 'Lion', 'LION'];
 const lion_input = document.querySelector("#lion_input");
 const lion_feedback = document.querySelector("#lion_feedback");
 
@@ -31,7 +31,7 @@ lion_input.addEventListener("input", function() {
 /// lion ////
 
 /// horses ////
-const horse_array = ['horse', 'Horse'];
+const horse_array = ['horse', 'Horse', 'HORSE'];
 const horse_input = document.querySelector("#horse_input");
 const horse_feedback = document.querySelector("#horse_feedback");
 
@@ -60,7 +60,7 @@ horse_input.addEventListener("input", function() {
 /// horse ////
 
 /// dog ////
-const dog_array = ['dog', 'Dog'];
+const dog_array = ['dog', 'Dog', 'CAT'];
 const dog_input = document.querySelector("#dog_input");
 const dog_feedback = document.querySelector("#dog_feedback");
 
@@ -90,7 +90,7 @@ dog_input.addEventListener("input", function() {
 
 
 /// cat ////
-const cat_array = ['cat', 'Cat'];
+const cat_array = ['cat', 'Cat', 'CAT'];
 const cat_input = document.querySelector("#cat_input");
 const cat_feedback = document.querySelector("#cat_feedback");
 
@@ -120,7 +120,7 @@ cat_input.addEventListener("input", function() {
 
 
 /// bird ////
-const bird_array = ['bird', 'Bird'];
+const bird_array = ['bird', 'Bird', 'BIRD'];
 const bird_input = document.querySelector("#bird_input");
 const bird_feedback = document.querySelector("#bird_feedback");
 
@@ -150,7 +150,7 @@ bird_input.addEventListener("input", function() {
 
 
 /// bear ////
-const bear_array = ['bear', 'Bear'];
+const bear_array = ['bear', 'Bear', 'BEAR'];
 const bear_input = document.querySelector("#bear_input");
 const bear_feedback = document.querySelector("#bear_feedback");
 
@@ -180,7 +180,7 @@ bear_input.addEventListener("input", function() {
 
 
 /// rabbit ////
-const rabbit_array = ['rabbit', 'Rabbit'];
+const rabbit_array = ['rabbit', 'Rabbit', 'FISH'];
 const rabbit_input = document.querySelector("#rabbit_input");
 const rabbit_feedback = document.querySelector("#rabbit_feedback");
 
@@ -210,7 +210,7 @@ rabbit_input.addEventListener("input", function() {
 
 
 /// fish ////
-const fish_array = ['fish', 'Fish'];
+const fish_array = ['fish', 'Fish', 'FISH'];
 const fish_input = document.querySelector("#fish_input");
 const fish_feedback = document.querySelector("#fish_feedback");
 
@@ -238,15 +238,6 @@ fish_input.addEventListener("input", function() {
 });
 /// fish ////
 
-
-// mouse events to spawn ants
-let ant_colony = document.querySelector(".ant_colony")
-let spawning_ants = document.querySelector(".spawning_ants")
-ant_colony.onmouseover = function(){
-    //circle_paragraph.textContent += "- CIRCLE -"
-    spawning_ants.innerHTML += '<img src="images/ants.gif" class="aaa">';
-}
-// mouse events to spawn ants
 
 
 
@@ -382,6 +373,17 @@ closeBtn_8.addEventListener("click", function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* giant squid */
 let btnscrollby = document.querySelector(".btnscrollby")
 let content = document.querySelector("#content")
@@ -395,7 +397,7 @@ btnscrollby.addEventListener("click", function(){
 let count_width = document.querySelector(".resize_width")
 window.addEventListener("scroll", function(){
     let x_pixels = window.scrollX
-    count_width.innerHTML = `${x_pixels} px away`
+    count_width.innerHTML = `${x_pixels} px`
 })
 
 
@@ -405,7 +407,7 @@ let displaypexels = document.querySelector(".displaypexels")
 
 window.addEventListener("scroll", function(){
     let y_pixels = window.scrollY
-    displaypexels.innerHTML = `${y_pixels} px away from the top`
+    displaypexels.innerHTML = `${y_pixels}px`
 })
 
 window.addEventListener("resize", function(){
@@ -447,6 +449,97 @@ function widthResize() {
         width_colors.style.color = '#ff0000ff';
     }
 }
-
 window.addEventListener("resize", widthResize);
 widthResize(); 
+
+
+
+
+const toTop = document.querySelector(".toTop")
+window.addEventListener("scroll", function(){
+    let y_pixels = window.scrollY
+    if (y_pixels > 600){
+        toTop.style.display = "block"
+    }
+    else{
+        toTop.style.display = "none"
+    }
+})
+
+
+// mouse events to spawn ants
+let ant_colony = document.querySelector(".ant_colony")
+let spawning_ants = document.querySelector(".spawning_ants")
+
+let count = 0;
+const circle = document.querySelector(".circle");
+const counting = document.querySelector("#counting");
+
+ant_colony.onmouseover = function(){
+  count++;
+  counting.textContent = count;
+  spawning_ants.innerHTML += '<img src="images/ants.gif" class="aaa">';
+};
+// see if number are higher then change color *** 
+// mouse events to spawn ants
+
+
+
+const randomRGB = function(){
+    let red = Math.floor(Math.random()*255)
+    let green = Math.floor(Math.random()*255)
+    let blue = Math.floor(Math.random()*255)
+    return `rgb(${red}, ${green}, ${blue})`
+}
+
+let box_color = document.querySelector(".box_color")
+box_color.addEventListener("mouseout",function(){
+    box_color.style.backgroundColor = randomRGB()
+
+})
+let box_color_2 = document.querySelector(".box_color_2")
+box_color_2.addEventListener("mouseout",function(){
+    box_color_2.style.backgroundColor = randomRGB()
+
+})
+let box_color_3 = document.querySelector(".box_color_3")
+box_color_3.addEventListener("mouseout",function(){
+    box_color_3.style.backgroundColor = randomRGB()
+
+})
+let box_color_4 = document.querySelector(".box_color_4")
+box_color_4.addEventListener("mouseout",function(){
+    box_color_4.style.backgroundColor = randomRGB()
+})
+let box_color_5 = document.querySelector(".box_color_5")
+box_color_5.addEventListener("mouseout",function(){
+    box_color_5.style.backgroundColor = randomRGB()
+})
+
+let box_color_6 = document.querySelector(".box_color_6")
+box_color_6.addEventListener("mouseout",function(){
+    box_color_6.style.backgroundColor = randomRGB()
+})
+
+let box_color_7 = document.querySelector(".box_color_7")
+box_color_7.addEventListener("mouseout",function(){
+    box_color_7.style.backgroundColor = randomRGB()
+})
+
+let box_color_8 = document.querySelector(".box_color_8")
+box_color_8.addEventListener("mouseout",function(){
+    box_color_8.style.backgroundColor = randomRGB()
+})
+
+/* Ant colony */
+let box_color_9 = document.querySelector(".box_color_9")
+box_color_9.addEventListener("mouseout",function(){
+    box_color_9.style.backgroundColor = randomRGB()
+})
+/* Ant colony */
+
+
+
+
+
+
