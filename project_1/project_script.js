@@ -1,5 +1,104 @@
-// onst animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
-// I tried to use thie method but if I type lion in below horse image it would be correct // 
+/* 8 images of animals so kids can read before taking a quiz */
+const openmodal1 = document.querySelector("#openmodal1")
+const modalOverlay = document.querySelector("#modalOverlay")
+const closeBtn = document.querySelector("#closeBtn")
+
+openmodal1.addEventListener("click", function(){
+    modalOverlay.style.display = "block"
+})
+closeBtn.addEventListener("click", function(){
+    modalOverlay.style.display = "none"
+})
+
+
+const openmodal_2 = document.querySelector("#openmodal_2")
+const modalOverlay_2 = document.querySelector("#modalOverlay_2")
+const closeBtn_2 = document.querySelector("#closeBtn_2")
+
+openmodal_2.addEventListener("click", function(){
+    modalOverlay_2.style.display = "block"
+})
+closeBtn_2.addEventListener("click", function(){
+    modalOverlay_2.style.display = "none"
+})
+
+
+const openmodal_3 = document.querySelector("#openmodal_3")
+const modalOverlay_3 = document.querySelector("#modalOverlay_3")
+const closeBtn_3 = document.querySelector("#closeBtn_3")
+
+openmodal_3.addEventListener("click", function(){
+    modalOverlay_3.style.display = "block"
+})
+closeBtn_3.addEventListener("click", function(){
+    modalOverlay_3.style.display = "none"
+})
+
+
+const openmodal_4 = document.querySelector("#openmodal_4")
+const modalOverlay_4 = document.querySelector("#modalOverlay_4")
+const closeBtn_4 = document.querySelector("#closeBtn_4")
+
+openmodal_4.addEventListener("click", function(){
+    modalOverlay_4.style.display = "block"
+})
+closeBtn_4.addEventListener("click", function(){
+    modalOverlay_4.style.display = "none"
+})
+
+
+const openmodal_5 = document.querySelector("#openmodal_5")
+const modalOverlay_5 = document.querySelector("#modalOverlay_5")
+const closeBtn_5 = document.querySelector("#closeBtn_5")
+
+openmodal_5.addEventListener("click", function(){
+    modalOverlay_5.style.display = "block"
+})
+closeBtn_5.addEventListener("click", function(){
+    modalOverlay_5.style.display = "none"
+})
+
+
+const openmodal_6 = document.querySelector("#openmodal_6")
+const modalOverlay_6 = document.querySelector("#modalOverlay_6")
+const closeBtn_6 = document.querySelector("#closeBtn_6")
+
+openmodal_6.addEventListener("click", function(){
+    modalOverlay_6.style.display = "block"
+})
+closeBtn_6.addEventListener("click", function(){
+    modalOverlay_6.style.display = "none"
+})
+
+
+const openmodal_7 = document.querySelector("#openmodal_7")
+const modalOverlay_7 = document.querySelector("#modalOverlay_7")
+const closeBtn_7 = document.querySelector("#closeBtn_7")
+
+openmodal_7.addEventListener("click", function(){
+    modalOverlay_7.style.display = "block"
+})
+closeBtn_7.addEventListener("click", function(){
+    modalOverlay_7.style.display = "none"
+})
+
+
+const openmodal_8 = document.querySelector("#openmodal_8")
+const modalOverlay_8 = document.querySelector("#modalOverlay_8")
+const closeBtn_8 = document.querySelector("#closeBtn_8")
+
+openmodal_8.addEventListener("click", function(){
+    modalOverlay_8.style.display = "block"
+})
+closeBtn_8.addEventListener("click", function(){
+    modalOverlay_8.style.display = "none"
+})
+/* 8 images of animals so kids can read before taking a quiz */
+
+
+
+// const animals_list = ['lion', 'horse', 'dog', 'cat', 'bird', 'bear', 'rabbit', 'fish'];
+// I tried to use thie method but if I type lion in below horse image it would be correct //
 
 /// lion ////
 const lion_array = ['lion', 'Lion', 'LION'];
@@ -239,234 +338,6 @@ fish_input.addEventListener("input", function() {
 /// fish ////
 
 
-
-
-/* Photographer take picture of animals version one */
-const btnright_1 = document.querySelector(".btnright_1")
-const btnleft_1 = document.querySelector(".btnleft_1")
-
-function scrollGallery(pixels_1){
-    document.querySelector("div.gallery-container_1").scrollBy({
-        left: pixels_1,
-        behavior: "smooth"
-    })
-}
-btnright_1.addEventListener("click", function(){
-    scrollGallery(1520)
-})
-
-btnleft_1.addEventListener("click", function(){
-    scrollGallery(-1520)
-})
-
-/* Photographer take picture of animals version one */
-
-
-
-/* 8 images of animals so kids can read before taking a quiz */
-const openmodal1 = document.querySelector("#openmodal1")
-const modalOverlay = document.querySelector("#modalOverlay")
-const closeBtn = document.querySelector("#closeBtn")
-
-openmodal1.addEventListener("click", function(){
-    modalOverlay.style.display = "block"
-})
-closeBtn.addEventListener("click", function(){
-    modalOverlay.style.display = "none"
-})
-
-
-const openmodal_2 = document.querySelector("#openmodal_2")
-const modalOverlay_2 = document.querySelector("#modalOverlay_2")
-const closeBtn_2 = document.querySelector("#closeBtn_2")
-
-openmodal_2.addEventListener("click", function(){
-    modalOverlay_2.style.display = "block"
-})
-closeBtn_2.addEventListener("click", function(){
-    modalOverlay_2.style.display = "none"
-})
-
-
-const openmodal_3 = document.querySelector("#openmodal_3")
-const modalOverlay_3 = document.querySelector("#modalOverlay_3")
-const closeBtn_3 = document.querySelector("#closeBtn_3")
-
-openmodal_3.addEventListener("click", function(){
-    modalOverlay_3.style.display = "block"
-})
-closeBtn_3.addEventListener("click", function(){
-    modalOverlay_3.style.display = "none"
-})
-
-
-const openmodal_4 = document.querySelector("#openmodal_4")
-const modalOverlay_4 = document.querySelector("#modalOverlay_4")
-const closeBtn_4 = document.querySelector("#closeBtn_4")
-
-openmodal_4.addEventListener("click", function(){
-    modalOverlay_4.style.display = "block"
-})
-closeBtn_4.addEventListener("click", function(){
-    modalOverlay_4.style.display = "none"
-})
-
-
-const openmodal_5 = document.querySelector("#openmodal_5")
-const modalOverlay_5 = document.querySelector("#modalOverlay_5")
-const closeBtn_5 = document.querySelector("#closeBtn_5")
-
-openmodal_5.addEventListener("click", function(){
-    modalOverlay_5.style.display = "block"
-})
-closeBtn_5.addEventListener("click", function(){
-    modalOverlay_5.style.display = "none"
-})
-
-
-const openmodal_6 = document.querySelector("#openmodal_6")
-const modalOverlay_6 = document.querySelector("#modalOverlay_6")
-const closeBtn_6 = document.querySelector("#closeBtn_6")
-
-openmodal_6.addEventListener("click", function(){
-    modalOverlay_6.style.display = "block"
-})
-closeBtn_6.addEventListener("click", function(){
-    modalOverlay_6.style.display = "none"
-})
-
-
-const openmodal_7 = document.querySelector("#openmodal_7")
-const modalOverlay_7 = document.querySelector("#modalOverlay_7")
-const closeBtn_7 = document.querySelector("#closeBtn_7")
-
-openmodal_7.addEventListener("click", function(){
-    modalOverlay_7.style.display = "block"
-})
-closeBtn_7.addEventListener("click", function(){
-    modalOverlay_7.style.display = "none"
-})
-
-
-const openmodal_8 = document.querySelector("#openmodal_8")
-const modalOverlay_8 = document.querySelector("#modalOverlay_8")
-const closeBtn_8 = document.querySelector("#closeBtn_8")
-
-openmodal_8.addEventListener("click", function(){
-    modalOverlay_8.style.display = "block"
-})
-closeBtn_8.addEventListener("click", function(){
-    modalOverlay_8.style.display = "none"
-})
-/* 8 images of animals so kids can read before taking a quiz */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* giant squid */
-let btnscrollby = document.querySelector(".btnscrollby")
-let content = document.querySelector("#content")
-btnscrollby.addEventListener("click", function(){
-    window.scrollBy(5000, 0)
-})
-
-
-
-
-let count_width = document.querySelector(".resize_width")
-window.addEventListener("scroll", function(){
-    let x_pixels = window.scrollX
-    count_width.innerHTML = `${x_pixels} px`
-})
-
-
-
-
-let displaypexels = document.querySelector(".displaypexels")
-
-window.addEventListener("scroll", function(){
-    let y_pixels = window.scrollY
-    displaypexels.innerHTML = `${y_pixels}px`
-})
-
-window.addEventListener("resize", function(){
-    displaypexels.style.backgroundColor = "crimson"
-})
-
-
-
-
-
-
-const main_homework = document.querySelector("#main_homework");
-window.addEventListener("scroll", function(){
-    if (window.scrollY > 1000) {
-        main_homework.style.backgroundColor = '#d504ffff';
-    }
-    else if (window.scrollY > 0){
-        main_homework.style.backgroundColor = '#ff5e00ff'
-    }
-    else {
-        main_homework.style.backgroundColor = '#f0f0f0';
-    }
-});
-
-
-const width_colors = main_homework.querySelector('h1');
-function widthResize() {
-    const width = window.innerWidth;
-    if (width > 1000) {
-        width_colors.style.color = 'blue';
-    } 
-    else if (width > 700) {
-        width_colors.style.color = 'green';
-    } 
-    else if (width > 300) {
-        width_colors.style.color = 'orange';
-    } 
-    else {
-        width_colors.style.color = '#ff0000ff';
-    }
-}
-window.addEventListener("resize", widthResize);
-widthResize(); 
-
-
-
-
-const toTop = document.querySelector(".toTop")
-window.addEventListener("scroll", function(){
-    let y_pixels = window.scrollY
-    if (y_pixels > 600){
-        toTop.style.display = "block"
-    }
-    else{
-        toTop.style.display = "none"
-    }
-})
-
-
 // mouse events to spawn ants
 let ant_colony = document.querySelector(".ant_colony")
 let spawning_ants = document.querySelector(".spawning_ants")
@@ -484,6 +355,116 @@ ant_colony.onmouseover = function(){
 // mouse events to spawn ants
 
 
+/* giant squid */
+let scroll_to_right = document.querySelector(".scroll_to_right")
+let content = document.querySelector("#content")
+scroll_to_right.addEventListener("click", function(){
+    window.scrollBy(5000, 0)
+})
+/* giant squid */
+
+
+/* Photographer take picture of animals */
+const btnright_1 = document.querySelector(".btnright_1")
+const btnleft_1 = document.querySelector(".btnleft_1")
+
+function scrollGallery(pixels_1){
+    document.querySelector("div.gallery-container_1").scrollBy({
+        left: pixels_1,
+        behavior: "smooth"
+    })
+}
+btnright_1.addEventListener("click", function(){
+    scrollGallery(1520)
+})
+
+btnleft_1.addEventListener("click", function(){
+    scrollGallery(-1520)
+})
+
+/* Photographer take picture of animals */
+
+
+
+
+/* px up and down / right and left */
+// set only two decimald
+function only_two_decimal(number) {
+    return parseFloat(number).toFixed(2);
+}
+
+let size_width_px = document.querySelector(".size_width_px")
+window.addEventListener("scroll", function(){
+    let x_pixels = window.scrollX
+    size_width_px.innerHTML = `${only_two_decimal(x_pixels)} px`
+})
+
+let size_height_px = document.querySelector(".size_height_px")
+window.addEventListener("scroll", function(){
+    let y_pixels = window.scrollY
+    size_height_px.innerHTML = `${only_two_decimal(y_pixels)}px`
+})
+window.addEventListener("resize", function(){
+    size_height_px.style.backgroundColor = "blue"
+})
+/* px up and down / right and left */
+
+
+
+/* Up arrow so user can go at the top of website */
+const toTop = document.querySelector(".toTop")
+window.addEventListener("scroll", function(){
+    let y_pixels = window.scrollY
+    if (y_pixels > 1000){
+        toTop.style.display = "block"
+    }
+    else{
+        toTop.style.display = "none"
+    }
+})
+/* Up arrow so user can go at the top of website */
+
+
+/* Header color and style to make it pretty or cool */
+const main_header_zoo = document.querySelector("#main_header_zoo");
+window.addEventListener("scroll", function(){
+    if (window.scrollY > 3000) {
+        main_header_zoo.style.backgroundColor = 'rgba(221, 0, 255, 0.8)';
+    }
+    else if (window.scrollY > 2000){
+        main_header_zoo.style.backgroundColor = 'rgba(0, 81, 255, 0.8)'
+    }
+    else if (window.scrollY > 1000){
+        main_header_zoo.style.backgroundColor = 'rgba(255, 162, 0, 0.8)'
+    }
+    else {
+        main_header_zoo.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+    }
+});
+
+const width_colors = main_header_zoo.querySelector('#link_main_header');
+function widthResize() {
+    const width = window.innerWidth;
+    if (width > 1000) {
+        width_colors.style.color = 'black';
+    } 
+    else if (width > 800) {
+        width_colors.style.color = 'lightgreen';
+    } 
+    else if (width > 600) {
+        width_colors.style.color = 'blue';
+    } 
+    else if (width > 400) {
+        width_colors.style.color = 'yellow';
+    } 
+    else {
+        width_colors.style.color = '#ff0000ff';
+    }
+}
+window.addEventListener("resize", widthResize);
+widthResize();
+/* Header color and style to make it pretty or cool */
+
 
 const randomRGB = function(){
     let red = Math.floor(Math.random()*255)
@@ -491,26 +472,26 @@ const randomRGB = function(){
     let blue = Math.floor(Math.random()*255)
     return `rgb(${red}, ${green}, ${blue})`
 }
-
 let box_color = document.querySelector(".box_color")
 box_color.addEventListener("mouseout",function(){
     box_color.style.backgroundColor = randomRGB()
-
 })
+
 let box_color_2 = document.querySelector(".box_color_2")
 box_color_2.addEventListener("mouseout",function(){
     box_color_2.style.backgroundColor = randomRGB()
-
 })
+
 let box_color_3 = document.querySelector(".box_color_3")
 box_color_3.addEventListener("mouseout",function(){
     box_color_3.style.backgroundColor = randomRGB()
-
 })
+
 let box_color_4 = document.querySelector(".box_color_4")
 box_color_4.addEventListener("mouseout",function(){
     box_color_4.style.backgroundColor = randomRGB()
 })
+
 let box_color_5 = document.querySelector(".box_color_5")
 box_color_5.addEventListener("mouseout",function(){
     box_color_5.style.backgroundColor = randomRGB()
@@ -531,15 +512,11 @@ box_color_8.addEventListener("mouseout",function(){
     box_color_8.style.backgroundColor = randomRGB()
 })
 
+
 /* Ant colony */
 let box_color_9 = document.querySelector(".box_color_9")
 box_color_9.addEventListener("mouseout",function(){
     box_color_9.style.backgroundColor = randomRGB()
 })
 /* Ant colony */
-
-
-
-
-
 

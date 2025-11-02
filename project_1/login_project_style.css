@@ -1,0 +1,27 @@
+body{
+    background-color: #8edcfb;
+}
+.fabolous{
+    display: block;
+    box-shadow: 3px 4px 6px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 24px;
+    font-size: 16px;
+}
+.centering_registration{
+    margin-top: 2rem;
+    margin-left: 20rem;
+}
+.btnsubmit{
+    width: 100px;
+    height: 33px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btnsubmit:hover{
+    background-color: rgb(180, 59, 220);
+}

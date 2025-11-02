@@ -1,80 +1,141 @@
-div.gallery {
-    border: 1px solid #ccc;
-    background-color: rgb(0, 255, 42);
-    height: 450px;
+body{
+  background-color: aquamarine;
 }
 
-div.gallery:hover {
-  border: 1px solid #292ce9;
-}
-
-div.gallery img {
+#main_header_zoo {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 300px;
-}
-
-div.desc {
-  padding: 15px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
   text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+}
+#main_header_zoo a {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s ease;
 }
 
+/* Modal windows about animals  */
 * {
   box-sizing: border-box;
   flex-wrap: wrap;
 }
+.images_container{
+  margin-top: 60px;
+  width: 100%;
+  background-color: rgb(0, 157, 255);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.img_gallery{
+  width: 500px;
+  height: 300px;
+  margin: 2em;
+}
+.openmodal{
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.openmodal:hover{
+  opacity: 0.8;
+}
+.modal_overlay{
+  background-color: rgb(50,50,50, 0.8);
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  display: none;
+}
+.modal{
+  background-color: rgb(246, 228, 176);
+  width: 70%;
+  margin: 30px auto;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: relative;
+}
+.close_btn{
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bolder;
+}
+.close_btn:hover{
+    color: rgb(255, 0, 0);
+}
+.modal_fabulous{
+  width: 100%; 
+  background-color: rgb(174, 0, 255); /*  */
+  height: 100px; 
+  margin-top: 0px;
+}
+.modal h2{
+  text-align: center;
+  color: rgb(0, 255, 242);
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.modal_info{
+  display: flex;
+  justify-content: center;
+}
+.modal_img, .modal_p {
+  width: 500px;
+  height: 300px;
+  font-size: 21px;
+  line-height: 25px;
+  padding: 0.5rem;
+}
+/* Modal windows about animals  */
+
+
+
+
+/* Animal quizs */ /* Animal quizs */
+.gallery {
+  border: 1px solid #ccc;
+  background-color: rgb(0, 255, 42);
+  height: 450px;
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+}
 .responsive {
   padding: 0 6px;
   float: left;
   width: 376px;
   margin-bottom: 30px; 
 }
-
 .centering_images{
   display: flex; 
   justify-content: space-around;
 }
-  
-  
-/* lab 10  */
-
 .input_color {
   width: 100%;
   padding: 8px;
   border: 1px solid #1100ff;
   border-radius: 4px;  
 }
-
-#feedback {
-  margin-top: 5px;
-  font-size: 0.9em;
-}
-
-.available {
-  color: rgba(0, 255, 0, 0.923);
-}
-
-.taken {
-  color: red;
-}
-
-.active_input_invalid{
-  border: crimson 3px solid;
-  box-shadow: 0px 3px 8px 2px crimson;
-}
-
-.active_input_valid{
-  border: rgb(0, 255, 0) 3px solid;
-  box-shadow: 0px 3px 8px 2px rgb(2, 255, 2);
-}
-
-.re_enter_username{
-  color: red;
-}
-.centering{
+.centering_title{
   text-align: center;
 }
-
 .centering_feedback{
   width: 60%;
   display: flex; 
@@ -87,293 +148,46 @@ div.desc {
 }
 
 
-/* ant colony */
+
+.available {
+  color: rgba(0, 255, 0, 0.923);
+}
+.taken {
+  color: red;
+}
+.active_input_invalid{
+  border: crimson 3px solid;
+  box-shadow: 0px 3px 8px 2px crimson;
+}
+.active_input_valid{
+  border: rgb(0, 255, 0) 3px solid;
+  box-shadow: 0px 3px 8px 2px rgb(2, 255, 2);
+}
+.re_enter_username{
+  color: red;
+}
+/* Animal quizs */ /* Animal quizs */
+
+
+
+/* ant colony */ /* ant colony */
 .image_nest{
   width: 200px;
   height: 200px;
   border-radius: 30%;
 }
-
 .aaa{
   width: 20%;
   height: 150px;
 }
-
 .centerting_ant_nest{
   width: 100%; 
   height: 200px;
-   
   margin-top: 10px;
   display: flex; 
   justify-content: center; 
   align-items: center;
-
 }
-
-/* ant colony */
-
-
-
-/* Photographer take picture of animals version one */
-
-.photographer{
-  margin-left: 70px; 
-  font-size: 20px;
-}
-
-.gallery-container_1, .maincontainer_1{
-  width: 1500px;
-  margin: auto;
-}
-
-.maincontainer_1{
-  position: relative;
-  z-index: 0;
-}
-
-.gallery-container_1{
-  position: relative;
-  z-index: 1;
-  overflow-x: scroll; 
-  white-space: nowrap; 
-}
-
-.gallery-image_1{
-  display: inline-block;
-  width: 500px;
-  height: 390px;
-}
-
-.btnright_1, .btnleft_1{
-  position: absolute;
-  z-index: 2;
-  top: 40%;
-  font-size: 3em;
-  color: rgb(0, 149, 255);
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  scroll-behavior: smooth;
-}
-
-.btnright_1:hover, .btnleft_1:hover{
-  color: crimson;
-  cursor: pointer;
-}
-
-.btnleft_1{
-  left: 0%;
-}
-
-.btnright_1{
-  right: 0%;
-}
-/* Photographer take picture of animals version one */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.images_container{
-  width: 100%;
-  margin: auto;
-  background-color: rgb(0, 157, 255);
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.img_gallery{
-  width: 500px;
-  height: 300px;
-  margin: 2em;
-}
-
-
-.openmodal{
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.openmodal:hover{
-  opacity: 0.8;
-}
-
-.modal_overlay{
-  background-color: rgb(50,50,50, 0.8);
-  position: fixed;
-  top: 0%;
-  bottom: 0%;
-  right: 0%;
-  left: 0%;
-  display: none;
-}
-
-.modal{
-  background-color: rgb(255, 255, 255);
-  width: 80%;
-  margin: 100px auto;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
-  position: relative;
-}
-
-.close_btn{
-  position: absolute;
-  top: 10px;
-  right: 35px;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font-weight: bolder;
-}
-
-.close_btn:hover{
-    color: rgb(255, 0, 0);
-}
-
-.modal_fabulous{
-  width: 100%; 
-  background-color: rgb(174, 0, 255); /*  */
-  height: 70px; 
-  margin-top: 0px;
-}
-
-.modal h2{
-  text-align: center;
-  padding: 1em;
-  color: rgb(30, 255, 0);
-}
-
-.modal_info{
-  display: flex;
-  justify-content: center;
-}
-
-.modal_img, .modal_p {
-  width: 500px;
-  height: 300px;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 0.5rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.squid_width{
-  width: 5000px;
-  height: 500px;
-}
-
-
-.resize_width{
-    line-height: 60px;
-    position: fixed;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgb(64, 255, 0);
-    width: 200px;
-    height: 50px;
-    bottom: 0.6%;
-    left: 0.2%;
-}
-
-
-.displaypexels{
-    background-color: rgba(255, 0, 208, 0.6);
-    color: rgb(0, 255, 26);
-    width: 80px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    position: fixed;
-    top: 3%;
-    margin-top: 45px;
-    right: 0.2%;
-}
-
-
-
-
-#main_homework {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f0f0f0;
-    text-align: center;
-    line-height: 60px;
-    transition: background-color 0.3s ease;
-}
-
-#main_homework h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.toTop{
-    background-color: rgb(150,150,150, 0.8);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    display: none;
-}
-
-.toTop a{
-    text-decoration: none;
-    color: orangered;
-}
-
-
 .circle {
   width: 100px;
   height: 100px;
@@ -385,20 +199,178 @@ div.desc {
   font-size: 2em;
   margin: 20px;
 }
+/* ant colony */ /* ant colony */
 
 
-
-
-
-.rectangle{
-    width: 500px;
-    height: 300px;
-    background-color: maroon;
-    margin: auto;
+.squid_width{
+  width: 5000px;
+  height: 500px;
 }
 
-.rectangle{
-    text-align: center;
-    font-size: 3rem;
-    padding: 3rem;
+
+
+/* Photographer take picture of animals version one */
+.photographer{
+  margin-left: 70px; 
+  font-size: 20px;
+}
+.adjusting_images_photographer{
+  width: 400px; 
+  height: 300px;
+}
+.gallery-container_1, .maincontainer_1{
+  width: 1500px;
+  margin: auto;
+}
+.maincontainer_1{
+  position: relative;
+  z-index: 0;
+}
+.gallery-container_1{
+  position: relative;
+  z-index: 1;
+  overflow-x: scroll; 
+  white-space: nowrap; 
+}
+.gallery-image_1{
+  display: inline-block;
+  width: 500px;
+  height: 330px;
+}
+.btnright_1, .btnleft_1{
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  font-size: 4em;
+  color: rgb(0, 149, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  scroll-behavior: smooth;
+}
+.btnright_1:hover, .btnleft_1:hover{
+  color: crimson;
+  cursor: pointer;
+}
+.btnleft_1{
+  left: 0%;
+}
+.btnright_1{
+  right: 0%;
+}
+/* Photographer take picture of animals version one */
+
+
+
+/* coutning px from left to right / up and down */
+.size_width_px{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(64, 255, 0);
+  width: 95px;
+  height: 5%;
+  bottom: 0.6%;
+  left: 0.2%;
+}
+.size_height_px{
+  background-color: rgba(255, 0, 208, 0.6);
+  color: rgb(0, 255, 26);
+  width: 95px;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: fixed;
+  top: 3%;
+  text-decoration: none;
+  margin-top: 45px;
+  right: 0.2%;
+}
+/* coutning px from left to right / up and down */
+
+
+/* Up arrow so user can go at the top of website */
+.toTop{
+  background-color: rgba(234, 255, 0, 0.8);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 50px;
+}
+.toTop a{
+  text-decoration: none;
+  color: rgb(0, 157, 255);
+}
+.coloring_arrow:hover{
+  color: red;
+}
+/* Up arrow so user can go at the top of website */
+
+
+.scroll_to_right{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-style: italic;
+  background-color: aqua;
+  border: none;
+}
+.scroll_to_right:hover{
+  background-color: rgb(4, 255, 167);
+}
+
+
+footer{
+  background-color: rgb(27, 160, 0);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer_left, .footer_center, .footer_right{
+  width: 400px;
+}
+.footer_left a, .footer_center a, .footer_right a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.footer_left a:hover, .footer_center a:hover, .footer_right a:hover{
+  color: rgb(0, 234, 255);
+}
+.social_media_icons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social_media_icons a{
+  display: inline-block;
+  width: 13%;
+  margin-right: 20px;
+  opacity: 0.6;
+  transition: ease-in-out 300ms;
+}
+.social_media_icons a:hover{
+  opacity: 1;
+}
+.copyright{
+  width: 100%;
+  color: rgb(238, 255, 0);
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
 }
