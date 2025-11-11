@@ -1,6 +1,7 @@
 import './App.css';
 import User from './comment';
 import User_feedback from './User_feedback'
+import Modalwindow from './modalwindow';
 
 // import images
 import avatar1 from './images/avatar_batman.png'
@@ -13,30 +14,17 @@ function App() {
     <h1 style={{textAlign: "center"}}>Lab 12, React props by Gonzalo Guerra</h1>
     <section className='container'>
       {/** user 1 */}
-      <User image = {avatar1} name = "Batman" date = "04/23/2025" msg = "I am Batman"/>
-
-      {/** user 2 */}
-      <User image = {avatar2} name = "Daisy" date = "01/20/2025" msg = "Where is the bus stop?"/>
-
-      {/** user 3 */}
-      <User image = {avatar3} name = "Peter" date = "12/13/2024" msg = "I need help!" />
-    </section>
-
-
-    <section className='container'>
-      {/** user 1 */}
       <User_feedback username = "Batman">  <User image = {avatar1} name = "Batman" date = "04/23/2025" msg = "I am Batman"/></User_feedback>
 
       {/** user 2 */}
-      <User_feedback username = "Daisy">  <User image = {avatar2} name = "Batman" date = "01/20/2025" msg = "Where is the bus stop?"/></User_feedback>
+      <User_feedback username = "Daisy">   <User image = {avatar2} name = "Daisy" date = "01/20/2025" msg = "Where is the bus stop?"/></User_feedback>
 
       {/** user 3 */}
-      <User_feedback>  <User image = {avatar3} name = "Batman" date = "12/13/2024" msg = "I need help!"/></User_feedback>
-
+      <User_feedback username = "Peter">   <User image = {avatar3} name = "Peter" date = "12/13/2024" msg = "I need help!"/></User_feedback>
     </section>
 
+    
     </>
   );
 }
-
 export default App;

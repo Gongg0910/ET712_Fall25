@@ -1,5 +1,4 @@
 import React from "react";
-import avataruser1 from './images/avatar_batman.png'
 import './App.css';
 
 const User = function(props){
