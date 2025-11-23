@@ -19,6 +19,7 @@ function App() {
     setInputs(values => ({...values, [name]: value}))
   }
 
+
   // set states for select gender
   const [myGender, setMygender] = useState("")
   // function to collect the selected gender
@@ -45,6 +46,7 @@ function App() {
       <form className='myform' onSubmit={submitform}>
         <fieldset>
           <legend>Form in React JS</legend>
+
           <div className='formgroup'>
             <label for="name">Enter name:</label>
             <input 
@@ -54,6 +56,19 @@ function App() {
               name='username'
               placeholder='Type the username...'
               value={inputs.username}
+              onChange={handle_changes}
+            />
+          </div>
+
+          <div className='formgroup'>
+            <label for="password">Enter password:</label>
+            <input 
+              type='password' 
+              id='password'
+              className='inputstyle'
+              name='password'
+              placeholder='Type the password...'
+              value={inputs.password}
               onChange={handle_changes}
             />
           </div>
@@ -100,9 +115,12 @@ function App() {
       </form>
       {/* test the username collected after the submit button */}
       <p className='printresult'>Username = {inputs.username}</p>
-      <p className='printresul'>Age = {inputs.age}</p>
-      <p className='printresul'>Gender = {myGender}</p>
-      <p className='printresul'>Comments = {textcomment}</p>
+      <p className='printresult'>Age = {inputs.age}</p>
+      
+      <p className='printresult'>Password = {inputs.password}</p>
+
+      <p className='printresult'>Gender = {myGender}</p>
+      <p className='printresult'>Comments = {textcomment}</p>
 
 
     </div>
