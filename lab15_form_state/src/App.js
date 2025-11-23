@@ -11,13 +11,16 @@ function App() {
   const [inputs, setInputs] = useState({})
 
 
-  // function to handle changes in all inputs
+  // function to handle changes in all inputs 
   const handle_changes = function(event){
     const name = event.target.name
+    const password = event.target.password
     const value = event.target.value
+
     // update the states
     setInputs(values => ({...values, [name]: value}))
-  }
+    setInputs(values => ({...values, [password]: value}))
+  } 
 
 
   // set states for select gender
@@ -115,10 +118,8 @@ function App() {
       </form>
       {/* test the username collected after the submit button */}
       <p className='printresult'>Username = {inputs.username}</p>
-      <p className='printresult'>Age = {inputs.age}</p>
-      
       <p className='printresult'>Password = {inputs.password}</p>
-
+      <p className='printresult'>Age = {inputs.age}</p>
       <p className='printresult'>Gender = {myGender}</p>
       <p className='printresult'>Comments = {textcomment}</p>
 
