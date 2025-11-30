@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  display: block;
+}
+
+/* productlist.js  */
+.producttitle{
+  text-align: center;
+  color: darkgreen;
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  border: solid gray 1px;
+  width: 220px;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.productname{
+  text-align: center;
+  font-weight: bolder;
+}
+.productname s{
+  margin-left: 0.2rem;
+  color: darkgray;
+}
+.productname span{
+  font-size: 1.5rem;
+  color: crimson;
+  margin-left: 0.2rem;
+}
+.btn_addcart{
+  width: 100%;
+  border: none;
+  background-color: darkgreen;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.btn_addcart:hover{
+  cursor: pointer;
+  background-color: crimson;
+  box-shadow: 0px 0px 2px 1px gray;
+}
+
+
+/* cart.js */
+.carttitle{
+  color: darkgreen;
+  text-align: center;
+}
+.cartcontainer{
+  width: 1000px;
+  margin: 2rem auto;
+  border: solid 1px gray;
+  padding: 1.5rem;
+}
+.emptymsg{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: gray;
+}
+.itemcart{
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+.cartitemimg{
+  width: 10%;
+  padding: 0.5rem;
+}
+.cartitemname{
+  padding-left: 2rem;
+}
+.cartitemprice, .cartitemquantity, .cartitemtotal{
+  width: 20%;
+  padding: 0.5rem;
+}
+.btncartremove{
+  color: crimson;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+
+}
+.btncartremove:hover{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.totalcart{
+  border-top: solid gray 1px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem 0rem;
+  text-align: right;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.navbar {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navbar li a:hover {
+  background-color: #0080ff;
+  border-radius: 2px;
+}
+.content {
+  margin-bottom: 150px;
+}
+.box_about {
+  width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px 3px blue;
+  border-radius: 8px;
+  margin-top: 30px;
+  background-color: #a4fb7f;
+}
+.image {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+}
+.text_about{
+    font-size: 20px;
+}
