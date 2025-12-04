@@ -1,4 +1,4 @@
-console.log("Gonzalo Guerra")
+/* console.log("Gonzalo Guerra")
 console.log('------ Example 1: console -----')
 console.warn("Warning! check the last line before proceed!")
 console.error("ERROR, port is not available!")
@@ -6,11 +6,27 @@ console.trace("TRACE LOCATION")
 
 setTimeout(()=>{
     console.warn("Warning! input string for the next line")
-}, 3000)
+}, 3000) */
 
 console.log('------ Example 2: creating a simple module file -----')
-//const name = require("./mod.js")
-const name = require('./mod.js');
-console.log(name);
+// name = require("./mod.js")
+import name from "./mod.js"
+
+console.log(name.helper("Peter"))
+console.log(name.id(12345))
+console.log(name.email("peter@neverland.edu"))
+
+console.log('------ Example 3: event emitter -----')
+import events from 'events';
+
+const eventEmitter = new events.EventEmitter();
+
+eventEmitter.on('test', (a) => {
+    console.log(a);
+});
+
+eventEmitter.emit('test', 'EVENTS IN NODEJS');
+
+
 
 
