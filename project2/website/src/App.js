@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import FirstWeb from './first_web';
 import SecondWeb from './second_web';
+import ThirdWeb from './third_web';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -54,6 +55,9 @@ function App() {
             <li>
               <Link to="/second_web">Cart ({cart.length})</Link>
             </li>
+            <li>
+              <Link to="/third_web">Cat</Link>
+            </li>
           </ul>
         </nav>
         <h1>This is guitar center</h1>
@@ -62,10 +66,8 @@ function App() {
 
           <Routes>
             <Route path="/" element={<FirstWeb addToCart={addToCart} />} />
-            <Route 
-              path="/second_web" 
-              element={<SecondWeb cart={cart} removeFromCart={removeFromCart} />} 
-            />
+            <Route path="/second_web" element={<SecondWeb cart={cart} removeFromCart={removeFromCart} />} />
+            <Route path="/third_web" element={<ThirdWeb  />} />
           </Routes>
 
         </div>
