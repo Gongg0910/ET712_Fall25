@@ -65,9 +65,9 @@ function App() {
         <div className="content">
 
           <Routes>
-            <Route path="/" element={<FirstWeb addToCart={addToCart} />} />
-            <Route path="/second_web" element={<SecondWeb cart={cart} removeFromCart={removeFromCart} />} />
-            <Route path="/third_web" element={<ThirdWeb  />} />
+            <Route path="/"            element={<FirstWeb addToCart={addToCart} />} />
+            <Route path="/second_web"  element={<SecondWeb cart={cart} removeFromCart={removeFromCart} />} />
+            <Route path="/third_web"   element={<ThirdWeb addToCart={addToCart} />} />
           </Routes>
 
         </div>

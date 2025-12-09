@@ -12,6 +12,13 @@ import album_metallica_2 from './images/albums/album_metallica_Master_of_Puppets
 import album_metallica_3 from './images/albums/album_metallica_Ride_the_Lightning.webp'
 import album_megadeth_1 from './images/albums/album_megadeth_Dystopia.png'
 
+import pick_dimebag_1 from './images/products/picks/pick_Dimebag_Dunlop_Tortex.jpg'
+import pick_rex_brown_1 from './images/products/picks/pick_Rex_Brown_Dunlop_Tortex.gif'
+import pick_james_hetfield_1 from './images/products/picks/pick_James_Hetfield_Black_Fang.jpg'
+import pick_robert_trujillo_1 from './images/products/picks/pick_Robert_Trujillo_Dunlop_Warlord.jpg'
+import pick_kirk_hammett_1 from './images/products/picks/pick_Kirk_Hammett_Dunlop_Jazz_III.jpg'
+import pick_dave_mustaine_1 from './images/products/picks/pick_Dave_Mustaine_Dunlop_Tortex.jpg'
+
 export const guitarProducts = [
     {id :1, name:"Far Beyond Driven Guitar - Dimebag",  price:1,    was:1, image:guitar_pantera_1},
     {id :2, name:"1981 Dean ML Guitar - Dimebag", price:1.5,  was:1, image:guitar_pantera_2},
@@ -22,11 +29,22 @@ export const guitarProducts = [
 ];
 
 export const albumProducts = [
-    {id :7, name:"Far Beyond Driven Album",  price:10,    was:15, image:album_pantera_1},
-    {id :8, name:"Vulgar Display of Power Album", price:12,  was:18, image:album_pantera_2},
-    {id :9, name:"Vulgar Display of Power Album", price:12,  was:18, image:album_metallica_1},
-    {id :10, name:"Vulgar Display of Power Album", price:12,  was:18, image:album_metallica_2},
-    {id :11, name:"Vulgar Display of Power Album", price:12,  was:18, image:album_metallica_3},
-    {id :12, name:"Vulgar Display of Power Album", price:12,  was:18, image:album_megadeth_1},
+    {id :7, name:"Vulgar Display of Power",  price:10,    was:15, image:album_pantera_1},
+    {id :8, name:"Far Beyond Driven ", price:12,  was:18, image:album_pantera_2},
+    {id :9, name:"...And Justice for All", price:12,  was:18, image:album_metallica_1},
+    {id :10, name:"Master of Puppets", price:12,  was:18, image:album_metallica_2},
+    {id :11, name:"Ride the Lightning", price:12,  was:18, image:album_metallica_3},
+    {id :12, name:"Dystopia", price:12,  was:18, image:album_megadeth_1},
+    
+];
+
+export const picksProducts = [
+    {id :1, name:"Dunlop Tortex guitar green pick - Dimebag Darrell",  price:10,    was:15, image:pick_dimebag_1},
+    {id :2, name:"Dunlop Tortex  guitar black pick - Rex Brown",  price:10,    was:15, image:pick_rex_brown_1},
+    {id :3, name:"Black Fang guitar pick - James Hetfield",  price:10,    was:15, image:pick_james_hetfield_1},
+    {id :4, name:"Dunlop Warlord bass pick - Robert Trujillo",  price:10,    was:15, image:pick_robert_trujillo_1},
+    {id :5, name:"Dunlop Jazz III guitar pick - Kirk Hammett",  price:10,    was:15, image:pick_kirk_hammett_1},
+    {id :6, name:"Dunlop Tortex guitar yellow pick  - Kirk Hammett",  price:10,    was:15, image:pick_dave_mustaine_1},
+
     
 ];

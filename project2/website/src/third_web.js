@@ -1,6 +1,6 @@
 import './App.css';
 import ProductList from './components/productlist'; 
-import { guitarProducts, albumProducts } from './productData';
+import { picksProducts, albumProducts } from './productData';
 
 import cat_rock from './video/cat_rock.gif'
 
@@ -11,8 +11,8 @@ function ThirdWeb({ addToCart }) {
       <br/>
       
       <hr/> 
-      <h2>Guitars Sasdawedawsdection</h2>
-      <ProductList products={guitarProducts} addToCart={addToCart} />
+      <h2>Picks Section</h2>
+      <ProductList products={picksProducts} addToCart={addToCart} />
 
       <hr/> 
 
@@ -28,7 +28,7 @@ function ThirdWeb({ addToCart }) {
         </p>
       </div>
       
-      <h2>Albums Secasdawdasdwdawdtion</h2>
+      <h2>Product Section</h2>
       <ProductList products={albumProducts} addToCart={addToCart} />
 
     </div>
