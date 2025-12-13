@@ -1,11 +1,21 @@
 import './App.css';
-import Cart from './components/cart';
+import ProductList from './components/productlist'; 
+import { picksProducts, sellProducts } from './productData';
 
-function SecondWeb({ cart, removeFromCart }) {
+function SecondWeb({ addToCart, onViewDetails }) {
   return (
     <div className="App">
-      <h1 className='apptitle'>Your Shopping Cart</h1>
-      <Cart cart={cart} removeFromCart={removeFromCart} />
+      
+      <h2>Picks Section</h2>
+      <hr/> 
+      <ProductList products={picksProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
+
+      <hr/>     
+
+      <h2>Product Section</h2>
+      <hr/> 
+      <ProductList products={sellProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
+
     </div>
   );
 }

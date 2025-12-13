@@ -1,8 +1,7 @@
 import React from "react";
-import '../App.css'
+import ModalWindow from '../ModalWindow'; 
 
-
-const ProductList = ({ products, addToCart }) => {
+const ProductList = ({ products, addToCart, onViewDetails }) => {
     return(
         <>
             <section className="cardcontainer">
@@ -13,10 +12,16 @@ const ProductList = ({ products, addToCart }) => {
                                 <img src={product.image} alt={product.name}/>
                                 <p className="productname">
                                     {product.name}
-                                    <s>${product.was}/lb</s> 
                                     <span>${product.price}</span>
                                 </p>
 
+                                {/* New Button to open the Modal */}
+                                <button 
+                                    className="btn_viewdetails" 
+                                    onClick={() => onViewDetails(product)}>
+                                    View Details
+                                </button>
+                                
                                 <button className="btn_addcart" onClick={()=>addToCart(product)}>
                                     Add to cart
                                 </button>
