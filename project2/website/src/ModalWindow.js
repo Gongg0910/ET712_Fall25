@@ -9,7 +9,7 @@ const ModalWindow = ({ product, onClose }) => {
             <div className="modal-content" onClick={e => e.stopPropagation()}>
 
                 <button className="modal-close-btn" onClick={onClose}>&times;</button>
-                <img src={product.image} alt={product.name} className="modal-img" />
+                <img src={product.image_1} alt={product.name} className="modal-img" />
                 <div className="modal-details">
                     <h2 className="modal-title">{product.name}</h2>
                     <p className="modal-price">
@@ -17,7 +17,7 @@ const ModalWindow = ({ product, onClose }) => {
                         <s className="modal-was"> Was ${product.was}</s>
                     </p>
                     <p className="modal-description">
-                        abcdefghasdaowsbdaiyqwdaw
+                        {product.description}
                     </p>
                 </div>
                 
