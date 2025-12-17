@@ -12,10 +12,7 @@ const ModalWindow = ({ product, onClose }) => {
                 <img src={product.image_1} alt={product.name} className="modal-img" />
                 <div className="modal-details">
                     <h2 className="modal-title">{product.name}</h2>
-                    <p className="modal-price">
-                        Price: <span>${product.price}</span> 
-                        <s className="modal-was"> Was ${product.was}</s>
-                    </p>
+                    
                     <p className="modal-description">
                         {product.description}
                     </p>

@@ -13,6 +13,7 @@ const ProductList = ({ products, addToCart, onViewDetails }) => {
                                 <p className="productname">
                                     {product.name}
                                     <span>${product.price}</span>
+                                    <s className="modal-was"> ${product.was}</s>
                                 </p>
 
                                 {/* New Button to open the Modal */}

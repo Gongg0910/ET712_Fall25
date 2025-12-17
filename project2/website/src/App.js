@@ -70,7 +70,7 @@ function App() {
               <Link to="/second_web">Picks/Products</Link>
             </li>
             <li>
-              <Link to="/third_web">Cart ({cart.length})</Link>
+              <Link to="/third_web">Cart {cart.length}</Link>
             </li>
           </ul>
         </nav>
