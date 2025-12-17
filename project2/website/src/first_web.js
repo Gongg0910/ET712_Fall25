@@ -1,7 +1,7 @@
 import './App.css';
 import ProductList from './components/productlist'; 
 import Footer from './components/Footer'; 
-import { guitarProducts, albumProducts } from './productData';
+import { guitarProducts, albumProducts, shirtsProducts, equipmentsProducts } from './productData';
 
 function FirstWeb({ addToCart, onViewDetails }) {
   return (
@@ -14,11 +14,25 @@ function FirstWeb({ addToCart, onViewDetails }) {
         <ProductList products={guitarProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
 
         <hr/> 
-        
+      
         <h2>Albums Section</h2>
         <hr/> 
         {/* Pass onViewDetails to ProductList */}
         <ProductList products={albumProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
+
+        <hr/> 
+
+        <h2>Shirts Section</h2>
+        <hr/> 
+        {/* Pass onViewDetails to ProductList */}
+        <ProductList products={shirtsProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
+
+        <hr/> 
+
+        <h2>Instrument Section</h2>
+        <hr/> 
+        {/* Pass onViewDetails to ProductList */}
+        <ProductList products={equipmentsProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
       </div>
 
       <Footer /> 
