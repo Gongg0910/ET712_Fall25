@@ -1,5 +1,6 @@
 import './App.css';
-import ProductList from './components/productlist'; 
+import ProductList from './components/productlist';
+import Footer from './components/Footer'; 
 import { picksProducts, sellProducts } from './productData';
 
 function SecondWeb({ addToCart, onViewDetails }) {
@@ -15,7 +16,8 @@ function SecondWeb({ addToCart, onViewDetails }) {
       <h2>Product Section</h2>
       <hr/> 
       <ProductList products={sellProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
-
+      
+      <Footer /> 
     </div>
   );
 }

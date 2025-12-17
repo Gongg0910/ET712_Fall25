@@ -1,14 +1,14 @@
 /* --- Global Resets & Basics --- */
-*{
+*{ 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f8; 
-    color: #333;
-    line-height: 1.6;
+  background-color: #0a0a0a; 
+  font-family: 'Segoe UI', Impact, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
 }
 img{
   width: 100%;
@@ -17,14 +17,16 @@ img{
   object-fit: cover;  */
 }
 h1, h2 {
-    color: #007bff; 
-    margin: 1rem 0;
+  color: #ffcc00; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #000;
 }
 hr {
     border: none;
-    border-top: 1px solid #ddd;
-    margin: 1rem auto;
-    width: 80%;
+  border-top: 2px solid #333;
+  margin: 2rem auto;
+  width: 90%;
 }
 
 /* --- App.js General Styles --- */
@@ -32,19 +34,21 @@ hr {
   font-family: sans-serif;
   text-align: center;
 }
-.content {
-  padding-bottom: 100px; 
-}
+/* .content {
+  padding-bottom: 10px; 
+} */
 
 
 /* --- Navbar Styles --- */
 .navbar {
-  background-color: #1a1a2e; 
-  color: white;
-  padding: 1rem 0;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #000; 
+  border-bottom: 4px solid #ffcc00; 
+  padding: 1.2rem 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+
 }
+
+
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -52,14 +56,18 @@ hr {
   gap: 2.5rem;
 }
 .navbar li a {
-  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  color: #ffcc00;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .navbar li a:hover {
-  background-color: #007bff; 
+  background-color: #ffcc00; 
+  color: #000;
+  transform: skewX(-10deg); /* Aggressive angled look */
 }
 
 
@@ -70,27 +78,37 @@ hr {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 1rem;
+
+  
+  
 }
 .card{
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
   width: 350px; 
   overflow: hidden; 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #151515; 
+  border: 1px solid #333;
+  border-radius: 0; 
+  box-shadow: 10px 10px 0px #000; 
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  
+
 }
 .card:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  border-color: #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
 }
 .card > img {
-    border-radius: 10px 10px 0 0;
-    height: auto;
+  border-radius: 10px 10px 0 0;
+  height: auto;
 }
 .productname{ 
   text-align: center;
   font-weight: bolder;
   padding: 1rem 0.5rem 0.5rem;
+  color: #fff;
+  background: #222;
 }
 .productname s{ 
   display: block;
@@ -101,26 +119,44 @@ hr {
 }
 .productname span{
   font-size: 1.8rem;
-  color: #dc3545; 
   display: block;
   margin-top: 0.2rem;
+  color: #ffcc00; 
+  font-family: 'Courier New', Courier, monospace; 
 }
 .btn_addcart{
   width: calc(100% - 2rem);
   margin: 0 1rem 1rem 1rem;
   border: none;
-  background-color: #28a745; 
-  color: white;
   padding: 0.75rem;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.1s ease;
+  background-color: #ffcc00; 
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); /* Angled button shape */
 }
 .btn_addcart:hover{
-  background-color: #218838;
-  transform: scale(1.02); 
+  background-color: #fff;
+  transform: translateY(-3px);
 }
+
+.view_deatils {
+  background: transparent;
+  color: var(--accent-metal);
+  border: 1px solid var(--accent-metal);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+
 
 
 /* --- Cart Styles (cart.js) --- */
@@ -135,10 +171,13 @@ hr {
   width: 90%;
   max-width: 1000px;
   margin: 0rem auto;
-  background: white;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   padding: 2rem;
+  margin-bottom: 50px;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
 }
 .empty-msg{
   font-size: 1.3rem;
@@ -154,7 +193,8 @@ hr {
   justify-content: space-between; 
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+
+  border-bottom: 1px solid #222;
 }
 .cart-item:last-child {
     border-bottom: none; 
@@ -177,12 +217,12 @@ hr {
   font-size: 1.1rem;
 }
 .cart-item-price {
-    color: #777;
+    color: #cfcfcf;
     font-size: 0.9rem;
 }
 .cart-item-total{
   font-weight: 700;
-  color: #333;
+  color: #ffffff;
   margin-right: 1.5rem;
   font-size: 1.1rem;
 }
@@ -219,25 +259,26 @@ hr {
 .total-cart-value{
   font-size: 2rem;
   font-weight: bolder;
-  color: #007bff;
+  color: #ffcc00;
 }
 
 .checkout-btn {
     width: 100%;
     padding: 1rem;
-    background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
     margin-top: 1rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0;
 }
 
 .checkout-btn:hover {
-    background-color: #0056b3;
+    background-color: #ff0000;
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
@@ -251,7 +292,7 @@ hr {
   border: 1px solid #ccc;
   box-shadow: 0 4px 15px 3px rgba(0, 123, 255, 0.2); 
   border-radius: 10px;
-  background-color: #e6f7ff; /* Very light blue background */
+  background-color: #e6f7ff; 
   text-align: left;
 }
 .box_about h1 {
@@ -271,35 +312,25 @@ hr {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.9); 
+  backdrop-filter: grayscale(1) blur(10px); /* Gojira-style moody atmosphere */
 }
 
 .modal-content {
-    background: white;
+    
     padding: 2rem;
-    border-radius: 10px;
+    
     max-width: 600px;
     width: 90%;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -309,6 +340,13 @@ hr {
     gap: 1rem;
     max-height: 80vh;
     overflow-y: auto;
+
+
+    background: #111;
+  border: 2px solid #ffcc00;
+  color: #eee;
+  border-radius: 0;
+
 }
 
 .modal-close-btn {
@@ -319,8 +357,9 @@ hr {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #333;
+
     transition: color 0.3s;
+    color: #ffcc00;
 }
 
 .modal-close-btn:hover {
@@ -340,10 +379,12 @@ hr {
 }
 
 .modal-title {
-    font-size: 2rem;
+
     font-weight: bold;
-    color: #007bff;
     margin-bottom: 0.5rem;
+
+    color: #ffcc00;
+  font-size: 2.5rem;
 }
 
 .modal-price {
@@ -364,27 +405,160 @@ hr {
 }
 
 .modal-description {
-    color: #555;
+    color: #ffffff;
     line-height: 1.5;
 }
 
 
 /* "View Details" */
-.btn_viewdetails {
-    width: calc(100% - 2rem);
-    margin: 0.5rem 1rem 0rem 1rem;
-    border: 1px solid #007bff;
-    background-color: transparent;
-    color: #007bff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-bottom: 20px;
+.view_deatils {
+  width: calc(100% - 2rem);
+  margin: 0.5rem 1rem 0rem 1rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  color: #aaa;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.view_deatils:hover {
+  background-color: #444;
+  color: #fff;
+  border-color: #fff;
 }
 
-.btn_viewdetails:hover {
-    background-color: #007bff;
-    color: white;
+
+
+
+
+
+
+/* --- Footer.js --- */
+.site-footer {
+  background-color: #000000; 
+  color: #e0e0e0;
+  padding: 60px 20px 20px;
+  width: 100%;
+  box-sizing: border-box; 
+  margin-top: auto; 
+  border-top: 4px solid #ffcc00; 
+  position: relative;
+  overflow: hidden;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.footer {
+  flex: 1;
+  min-width: 200px;
+  margin: 15px;
+}
+.footer h3 {
+  color: #ffcc00; 
+  text-transform: uppercase;
+  font-family: 'Impact', 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li a {
+  color: #888888;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+.footer ul li a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+  transform: translateX(10px); /* Pushes the text right */
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+}
+
+
+/* ---- Connect / Icons ---- */
+.footer-icon ul li a{
+  display: flex;
+  align-items: center;
+          
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  filter: grayscale(1) invert(1); /* Makes icons white/gray */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+  filter: grayscale(0) invert(0); /* Reverts to color on hover */
+  transform: scale(1.3) rotate(-10deg);
+}
+
+/* --- Stay Updated --- */
+.footer.news input[type="email"] {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 12px;
+  width: 70%;
+  border-radius: 0; /* Sharp edges */
+  outline: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.footer.news button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ffcc00;
+  color: #000;   
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); /* Angled button */
+  transition: background-color 0.3s;
+}
+.footer.news button:hover {
+  background-color: #ff0000;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+/* first web */
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* first web */
+

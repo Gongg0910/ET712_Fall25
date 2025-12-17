@@ -18,7 +18,7 @@ const ProductList = ({ products, addToCart, onViewDetails }) => {
 
                                 {/* New Button to open the Modal */}
                                 <button 
-                                    className="btn_viewdetails" 
+                                    className="view_deatils" 
                                     onClick={() => onViewDetails(product)}>
                                     View Details
                                 </button>
@@ -26,7 +26,6 @@ const ProductList = ({ products, addToCart, onViewDetails }) => {
                                 <button className="btn_addcart" onClick={()=>addToCart(product)}>
                                     Add to cart
                                 </button>
-                                
                             </div>
                         )
                     )
