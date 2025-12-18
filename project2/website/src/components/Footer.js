@@ -12,18 +12,18 @@ const Footer = () => {
       <div className="footer-content">
 
         {/* Navigation Links */}
-        <div className="footer links">
+        <div className="footer">
           <h3>Explore</h3>
           <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/careers">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
-        <div className="footer contact">
+        <div className="footer">
           <h3>Contact Us</h3>
           <p>Email: gonzaloguerra@gmail.com</p>
           <p>Phone: (123) 456-7890</p>

@@ -109,6 +109,19 @@ import equipment_14 from './images/products/product_dave_Zoom_G21DM_Signature_Pe
 import equipment_15 from './images/products/product_mick_Death_by_Audio_Fuzz_War_Pedal.png'
 import equipment_16 from './images/products/product_mick_Death_by_Audio_Fuzz_War_Pedal_2.png'
 
+import game_1 from './images/games/game_guitar_hero_I.jpg'
+import game_2 from './images/games/game_guitar_hero_I_2.jpg'
+import game_3 from './images/games/game_guitar_hero_II.jpg'
+import game_4 from './images/games/game_guitar_hero_II_2.jpg'
+import game_5 from './images/games/game_guitar_hero_III.jpg'
+import game_6 from './images/games/game_guitar_hero_III_2.jpg'
+import game_7 from './images/games/game_guitar_hero_world_tour.jpg'
+import game_8 from './images/games/game_guitar_hero_world_tour_2.png'
+import game_9 from './images/games/game_rocksmith.jpg'
+import game_10 from './images/games/game_rocksmith_2.gif'
+import game_11 from './images/games/game_guitar.avif'
+import game_12 from './images/games/game_guitar_2.jpg'
+
 
 export const guitarProducts = [
     {id :1, name:"Snakeskin Electric Guitar - Dimebag",                             price:3000,    was:1000,   image:guitar_pantera_1,    image_1:image_snakeskin, description:"Dimebag Darrell used his snakeskin guitar, a Washburn D3, primarily for its unique look and for specific live performances, notably during the song Sandblasted Skin, because it was visually striking with real python skin and was set up for that song's unique B-string dive bombs, featuring a thick B-string (gauge 56) to handle the technique, making it a signature piece for a particular live moment rather than an everyday workhorse. "}, 
@@ -157,14 +170,14 @@ export const sellProducts = [
 ];
 
 export const shirtsProducts = [
-    {id :33, name:"Reinventing the Steel",         price:35,  was:29, image:pantera_shirt_1},
-    {id :34, name:"The Great Southern Trendkill",  price:50,  was:20, image:pantera_shirt_2},
-    {id :35, name:"Peace Sell... But Who Buying?", price:30,  was:20, image:megadeth_shirt_1},
-    {id :36, name:"Rust in Peace",                 price:45,  was:25, image:megadeth_shirt_2},
-    {id :37, name:"Master of Puppets",             price:35,  was:15, image:metallica_shirt_1},
-    {id :38, name:"...And Justice for All",        price:40,  was:20, image:metallica_shirt_2},
-    {id :39, name:"From Mars to Sirius",           price:35,  was:20, image:gojira_shirt_1},
-    {id :40, name:"Magma",                         price:35,  was:18, image:gojira_shirt_2},
+    {id :33, name:"Reinventing the Steel",         price:35,  was:29, image:pantera_shirt_1,   image_1:pantera_shirt_1},
+    {id :34, name:"The Great Southern Trendkill",  price:50,  was:20, image:pantera_shirt_2,   image_1:pantera_shirt_2},
+    {id :35, name:"Peace Sell... But Who Buying?", price:30,  was:20, image:megadeth_shirt_1,  image_1:megadeth_shirt_1},
+    {id :36, name:"Rust in Peace",                 price:45,  was:25, image:megadeth_shirt_2,  image_1:megadeth_shirt_2},
+    {id :37, name:"Master of Puppets",             price:35,  was:15, image:metallica_shirt_1, image_1:metallica_shirt_1},
+    {id :38, name:"...And Justice for All",        price:40,  was:20, image:metallica_shirt_2, image_1:metallica_shirt_2},
+    {id :39, name:"From Mars to Sirius",           price:35,  was:20, image:gojira_shirt_1,    image_1:gojira_shirt_1},
+    {id :40, name:"Magma",                         price:35,  was:18, image:gojira_shirt_2,    image_1:gojira_shirt_2},
 ];
 
 export const equipmentsProducts = [
@@ -176,4 +189,13 @@ export const equipmentsProducts = [
     {id :46, name:"Ibanez TS9 Tube Screamer pedal",                         price:700,  was:200, image:equipment_11, image_1:equipment_12}, 
     {id :47, name:"Zoom G2.1DM Signature Pedal",                            price:350,  was:330, image:equipment_13, image_1:equipment_14}, 
     {id :48, name:"Death by Audio Fuzz War",                                price:200,  was:180, image:equipment_15, image_1:equipment_16}, 
+];
+
+export const videogameProducts = [
+   {id :51, name:"Guitar Hero I",                    price:100,    was:20,    image:game_1,  image_1:game_2,  description:"Guitar Hero I (the first game) is a revolutionary 2005 rhythm game where players use a guitar-shaped controller with colored buttons and a strum bar to hit notes scrolling on-screen, simulating playing rock songs, and was created by Harmonix Music Systems, with publishing by RedOctane, emerging from a collaboration to bring Japanese music game concepts (like Guitar Freaks) to the West for the PS2. "}, 
+   {id :52, name:"Guitar Hero II",                   price:30,     was:20,    image:game_3,  image_1:game_4,  description:"Guitar Hero II is a popular music rhythm game, the sequel to the original, where players use a guitar-shaped controller to hit notes in time with rock songs, developed by Harmonix and published by RedOctane (PS2) and Activision (Xbox 360). It expanded on the first game with more songs, venues, and features like offline co-op, releasing in late 2006 (PS2) and early 2007 (Xbox 360). "}, 
+   {id :53, name:"Guitar Hero III: Legends of Rock", price:50,     was:20,    image:game_5,  image_1:game_6,  description:"Guitar Hero III: Legends of Rock is a hugely popular 2007 rhythm game where players use a guitar-shaped controller to hit colored notes, featuring epic boss battles and iconic rock songs, developed by Neversoft and published by Activision, becoming a massive cultural phenomenon and the best-selling game in the franchise. "}, 
+   {id :54, name:"Guitar Hero World Tour",           price:100,    was:50,    image:game_7,  image_1:game_8,  description:"Guitar Hero: World Tour (GHWT) is the fourth main installment in the music rhythm game series, developed by Neversoft and published by Activision in 2008, notable for adding drums and microphone support (like Rock Band) and a music creation tool (GHTunes) alongside its guitar-based gameplay, letting up to four players form a virtual band. The original Guitar Hero concept, which GHWT builds upon, was created by Charles Huang and Harmonix, with RedOctane producing hardware, but World Tour itself was developed by Neversoft. "}, 
+   {id :55, name:"Rocksmith",                        price:139.99, was:49.99, image:game_9,  image_1:game_10, description:"Rocksmith is a music video game by Ubisoft that teaches players to play real electric/bass guitars (or piano in later versions) by connecting them directly to a console/PC, offering real-time feedback through a visual interface (like a scrolling note highway) for learning songs, unlike traditional rhythm games using fake controllers. Created by Ubisoft San Francisco, it began in 2011 as a way to teach actual musical skills, evolving from a prototype by GameTank into a popular, long-running interactive music learning platform. "}, 
+   {id :56, name:"Xbox 360 Xplorer",                 price:100,    was:50,    image:game_11, image_1:game_12, description:"The Xbox 360 Xplorer, or RedOctane X-Plorer, is a wired guitar controller for music rhythm games like Guitar Hero, modeled after a Gibson Explorer guitar, released by RedOctane (owned by Activision) for Xbox 360, PC, and Mac, plugging in via USB for immersive gameplay, especially popular for games like Guitar Hero II & III. "}, 
 ];

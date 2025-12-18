@@ -1,7 +1,7 @@
 import './App.css';
 import ProductList from './components/productlist'; 
 import Footer from './components/Footer'; 
-import { guitarProducts, albumProducts } from './productData';
+import { guitarProducts, albumProducts, videogameProducts } from './productData';
 import song_metal from './video/rock_metals.gif'
 
 function FirstWeb({ addToCart, onViewDetails }) {
@@ -27,6 +27,13 @@ function FirstWeb({ addToCart, onViewDetails }) {
         <hr/> 
         {/* Pass onViewDetails to ProductList */}
         <ProductList products={albumProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
+
+        <hr/> 
+      
+        <h2>Video Games Section</h2>
+        <hr/> 
+        {/* Pass onViewDetails to ProductList */}
+        <ProductList products={videogameProducts} addToCart={addToCart} onViewDetails={onViewDetails} />
 
       </div>
 

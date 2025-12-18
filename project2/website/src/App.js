@@ -67,13 +67,13 @@ function App() {
         <nav className="navbar">
           <ul>
             <li>
-              <Link to="/">Guitars/Albums</Link>
+              <Link to="/">Guitars / Albums / Video Games</Link>
             </li>
             <li>
-              <Link to="/second_web">Picks/Products</Link>
+              <Link to="/second_web">Picks / Products</Link>
             </li>
             <li>
-              <Link to="/third_web">T-Shirts/Instruments</Link>
+              <Link to="/third_web">T-Shirts / Instruments</Link>
             </li>
             <li>
               <Link to="/fourth_web">Cart {cart.length}</Link>
