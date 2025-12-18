@@ -80,8 +80,7 @@ function App() {
             </li>
           </ul>
         </nav>
-        <h1 className='main-title'>Gongg Guitar Store</h1>
-        
+      
         <div className="content">
           <Routes>
             <Route path="/"           element={<FirstWeb  addToCart={addToCart} onViewDetails={handleViewDetails} />} />
