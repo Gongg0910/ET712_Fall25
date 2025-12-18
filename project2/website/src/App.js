@@ -5,7 +5,10 @@ import { useState } from 'react';
 import FirstWeb from './first_web';
 import SecondWeb from './second_web';
 import ThirdWeb from './third_web';
+import FourthWeb from './fourth_web';
 import ModalWindow from './ModalWindow'; 
+
+/* import song_metal from './video/rock_metals.gif' */
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -70,17 +73,22 @@ function App() {
               <Link to="/second_web">Picks/Products</Link>
             </li>
             <li>
-              <Link to="/third_web">Cart {cart.length}</Link>
+              <Link to="/third_web">T-Shirts/Instruments</Link>
+            </li>
+            <li>
+              <Link to="/fourth_web">Cart {cart.length}</Link>
             </li>
           </ul>
         </nav>
-        <h1>Gongg Guitar Store</h1>
-
+        <h1 className='main-title'>Gongg Guitar Store</h1>
+        
         <div className="content">
           <Routes>
-            <Route path="/"           element={<FirstWeb addToCart={addToCart} onViewDetails={handleViewDetails} />} />
+            <Route path="/"           element={<FirstWeb  addToCart={addToCart} onViewDetails={handleViewDetails} />} />
             <Route path="/second_web" element={<SecondWeb addToCart={addToCart} onViewDetails={handleViewDetails} />} />
-            <Route path="/third_web"  element={<ThirdWeb cart={cart} removeFromCart={removeFromCart} />} />
+            <Route path="/third_web"  element={<ThirdWeb  addToCart={addToCart} onViewDetails={handleViewDetails} />} />
+            <Route path="/fourth_web" element={<FourthWeb cart={cart} removeFromCart={removeFromCart} />} />
+
           </Routes>
         </div>
       </div>
@@ -94,3 +102,9 @@ function App() {
   );
 }
 export default App;
+
+
+
+
+
+
