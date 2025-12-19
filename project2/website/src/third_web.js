@@ -2,11 +2,11 @@ import './App.css';
 import ProductList from './components/productlist'; 
 import Footer from './components/Footer'; 
 import {shirtsProducts, equipmentsProducts } from './productData';
-import song_metal from './video/rock_metals.gif'
+import song_metal from './video/metal_bands.gif'
 
 function ThirdWeb({ addToCart, onViewDetails }) {
   return (
-    <div className="App-wrapper"> {/* Changed from 'App' to 'App-wrapper' */}
+    <div className="App-wrapper"> {/* Changed from 'App' to 'App-wrapper' */}    
       <div >
         
         <div className="hero-container">

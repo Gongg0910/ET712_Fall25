@@ -2,7 +2,7 @@ import './App.css';
 import ProductList from './components/productlist';
 import Footer from './components/Footer'; 
 import { picksProducts, sellProducts } from './productData';
-import song_metal from './video/rock_metals.gif'
+import song_metal from './video/metal_bands.gif'
 
 function SecondWeb({ addToCart, onViewDetails }) {
   return (
